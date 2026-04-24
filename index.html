@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frost Klima — Чистка, заправка, ремонт кондиционеров в Алматы</title>
+    <meta name="description" content="Чистка кондиционера, заправка, ремонт, обслуживание и установка кондиционеров в Алматы. Мойка наружного блока. Быстро и с гарантией.">
+    <meta name="keywords" content="чистка кондиционера, заправка кондиционера, ремонт кондиционер, обслуживание кондиционеров, дозаправка кондиционеров, установка кондиционера, монтаж кондиционера, мойка наружнего блока, чистка, заправка, дозаправка">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #050505; color: #f5f5f4; overflow-x: hidden; }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: rgb(120 113 108); border-radius: 3px; }
+
+        @keyframes slideUpFade {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes scaleReveal {
+            from { opacity: 0; transform: scale(1.08); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes breathe {
+            0%, 100% { opacity: 0.4; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+        @keyframes slow-zoom {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes shine {
+            0% { left: -50%; }
+            100% { left: 150%; }
+        }
+        @keyframes frostPulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .animate-up { animation: slideUpFade 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+        .animate-up-d1 { animation-delay: 0.1s; }
+        .animate-up-d2 { animation-delay: 0.2s; }
+        .animate-up-d3 { animation-delay: 0.3s; }
+        .animate-up-d4 { animation-delay: 0.4s; }
+        .animate-up-d5 { animation-delay: 0.5s; }
+        .animate-up-d6 { animation-delay: 0.6s; }
+        .animate-up-d7 { animation-delay: 0.7s; }
+        .animate-scale { animation: scaleReveal 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa, #38bdf8, #22d3ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .marquee-mask {
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+        .marquee-track { animation: scroll 40s linear infinite; }
+        .marquee-track:hover { animation-play-state: paused; }
+
+        .service-card { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 40px -10px rgba(56, 189, 248, 0.15);
+        }
+        .service-card:hover .card-img {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        .service-card:hover .card-line {
+            width: 100%;
+            background: linear-gradient(to right, #38bdf8, transparent);
+        }
+
+        .btn-primary {
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+            transition: all 0.3s;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+            transform: translateY(-1px);
+        }
+        .btn-primary::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -50%;
+            width: 50%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+            transform: skewX(-20deg);
+            animation: shine 4s ease-in-out infinite;
+        }
+
+        .btn-warm {
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.3);
+            transition: all 0.3s;
+        }
+        .btn-warm:hover {
+            box-shadow: 0 0 25px rgba(249, 115, 22, 0.5);
+            transform: translateY(-1px);
+        }
+        .btn-warm::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -50%;
+            width: 50%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+            transform: skewX(-20deg);
+            animation: shine 4s ease-in-out infinite;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+        }
+
+        .frost-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            pointer-events: none;
+        }
+
+        .reveal-section {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .price-card { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .price-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 50px -12px rgba(56, 189, 248, 0.2);
+        }
+        .price-card.featured {
+            border-color: rgba(56, 189, 248, 0.4);
+            background: linear-gradient(to bottom right, rgba(56, 189, 248, 0.05), transparent);
+        }
+
+        .gallery-item { transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
+        .gallery-item:hover { transform: scale(1.02); }
+        .gallery-item:hover img { transform: scale(1.08); opacity: 1; }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+
+        .toast {
+            position: fixed;
+            bottom: 2rem; right: 2rem;
+            padding: 1rem 1.5rem;
+            background: rgba(23, 23, 23, 0.95);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            border-radius: 1rem;
+            backdrop-filter: blur(24px);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 9999;
+        }
+        .toast.show { transform: translateY(0); opacity: 1; }
+
+        .nav-mobile {
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .nav-mobile.open { transform: translateX(0); }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s;
+        }
+        .faq-answer.open { max-height: 300px; }
+        .faq-icon { transition: transform 0.3s; }
+        .faq-item.active .faq-icon { transform: rotate(45deg); }
+
+        .counter { font-variant-numeric: tabular-nums; }
+    </style>
+</head>
+<body>
+
+    <!-- Background Orbs -->
+    <div class="frost-orb" style="width:600px;height:600px;background:rgba(56,189,248,0.04);top:-200px;right:-200px;animation:breathe 8s ease-in-out infinite;"></div>
+    <div class="frost-orb" style="width:500px;height:500px;background:rgba(96,165,250,0.03);bottom:20%;left:-250px;animation:breathe 10s ease-in-out infinite 2s;"></div>
+    <div class="frost-orb" style="width:400px;height:400px;background:rgba(34,211,238,0.03);top:50%;right:-100px;animation:breathe 12s ease-in-out infinite 4s;"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 h-20 z-50 transition-all duration-500" style="backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);">
+        <div class="max-w-7xl mx-auto h-full px-6 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #38bdf8, #0ea5e9);">
+                    <span class="iconify text-white text-xl" data-icon="mdi:snowflake"></span>
+                </div>
+                <div>
+                    <span class="text-lg font-semibold tracking-tight text-white">Frost</span>
+                    <span class="text-lg font-light tracking-tight gradient-text">Klima</span>
+                </div>
+            </a>
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="#services" class="text-xs font-medium tracking-wide uppercase text-stone-400 hover:text-white transition-colors duration-300">Услуги</a>
+                <a href="#pricing" class="text-xs font-medium tracking-wide uppercase text-stone-400 hover:text-white transition-colors duration-300">Цены</a>
+                <a href="#gallery" class="text-xs font-medium tracking-wide uppercase text-stone-400 hover:text-white transition-colors duration-300">Работы</a>
+                <a href="#process" class="text-xs font-medium tracking-wide uppercase text-stone-400 hover:text-white transition-colors duration-300">Как работаем</a>
+                <a href="#faq" class="text-xs font-medium tracking-wide uppercase text-stone-400 hover:text-white transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="btn-primary inline-flex items-center gap-2 bg-sky-500 text-white text-xs font-semibold tracking-wide uppercase px-6 py-3 rounded-full">
+                    <span class="iconify text-sm" data-icon="mdi:phone"></span>
+                    Заказать звонок
+                </a>
+            </div>
+            <button id="burger" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Меню">
+                <span class="w-6 h-0.5 bg-white transition-all duration-300" id="burger1"></span>
+                <span class="w-6 h-0.5 bg-white transition-all duration-300" id="burger2"></span>
+                <span class="w-4 h-0.5 bg-white transition-all duration-300" id="burger3"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div id="mobileNav" class="nav-mobile fixed inset-0 z-40 bg-black/95" style="backdrop-filter: blur(24px);">
+        <div class="flex flex-col items-center justify-center h-full gap-8">
+            <a href="#services" class="text-2xl font-light text-stone-300 hover:text-white transition-colors mobile-link">Услуги</a>
+            <a href="#pricing" class="text-2xl font-light text-stone-300 hover:text-white transition-colors mobile-link">Цены</a>
+            <a href="#gallery" class="text-2xl font-light text-stone-300 hover:text-white transition-colors mobile-link">Работы</a>
+            <a href="#process" class="text-2xl font-light text-stone-300 hover:text-white transition-colors mobile-link">Как работаем</a>
+            <a href="#faq" class="text-2xl font-light text-stone-300 hover:text-white transition-colors mobile-link">FAQ</a>
+            <div class="divider w-16 my-2"></div>
+            <a href="tel:+77472040401" class="text-xl font-medium gradient-text">+7 (747) 204-04-01</a>
+            <a href="#contact" class="btn-primary inline-flex items-center gap-2 bg-sky-500 text-white text-sm font-semibold px-8 py-4 rounded-full mt-4 mobile-link">
+                <span class="iconify" data-icon="mdi:phone"></span>
+                Заказать звонок
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen pt-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center min-h-[calc(100vh-80px)]">
+            <div class="flex flex-col justify-center py-16 lg:py-0">
+                <div class="animate-up animate-up-d1 inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 w-fit mb-8">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400" style="animation: frostPulse 2s ease-in-out infinite;"></span>
+                    <span class="text-xs font-medium tracking-wide text-stone-400">Работаем по всему Алматы</span>
+                </div>
+                <h1 class="animate-up animate-up-d2 text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-medium leading-[0.9] tracking-tighter mb-6">
+                    Ваш<br>
+                    <span class="gradient-text">кондиционер</span><br>
+                    под защитой
+                </h1>
+                <p class="animate-up animate-up-d3 text-lg font-light leading-relaxed text-stone-400 max-w-md mb-10">
+                    Чистка, заправка, ремонт и установка кондиционеров. Профессиональный сервис с гарантией качества в Алматы.
+                </p>
+                <div class="animate-up animate-up-d4 flex flex-wrap gap-4 mb-12">
+                    <a href="#contact" class="btn-primary inline-flex items-center gap-3 bg-sky-500 text-white text-sm font-semibold px-8 py-4 rounded-full">
+                        Оставить заявку
+                        <span class="iconify text-lg" data-icon="mdi:arrow-right"></span>
+                    </a>
+                    <a href="tel:+77472040401" class="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-white text-sm font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300">
+                        <span class="iconify text-lg text-sky-400" data-icon="mdi:phone"></span>
+                        Позвонить
+                    </a>
+                </div>
+                <div class="animate-up animate-up-d5 flex gap-10">
+                    <div>
+                        <div class="text-3xl font-medium tracking-tight counter" data-target="2500">0</div>
+                        <div class="text-xs text-stone-500 mt-1">Довольных клиентов</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-medium tracking-tight counter" data-target="8">0</div>
+                        <div class="text-xs text-stone-500 mt-1">Лет опыта</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-medium tracking-tight">1<span class="gradient-text"> год</span></div>
+                        <div class="text-xs text-stone-500 mt-1">Гарантия</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative animate-scale hidden lg:block">
+                <div class="absolute inset-0 rounded-3xl" style="background: linear-gradient(135deg, rgba(56,189,248,0.1), rgba(34,211,238,0.05)); filter: blur(60px);"></div>
+                <div class="relative rounded-3xl overflow-hidden aspect-[4/5]" style="box-shadow: 0 25px 60px -12px rgba(56,189,248,0.15);">
+                    <!-- Реальное фото: белый настенный кондиционер -->
+                    <img src="images/hero.png" alt="Настенный кондиционер — чистка и обслуживание в Алматы" class="w-full h-full object-cover opacity-80" style="animation: slow-zoom 20s ease-in-out infinite;">
+                    <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(5,5,5,0.8), transparent 50%, rgba(5,5,5,0.2));"></div>
+                    <div class="absolute bottom-8 left-8 right-8">
+                        <div class="bg-black/40 backdrop-blur-xl rounded-2xl p-6 border border-white/10">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center justify-center">
+                                    <span class="iconify text-sky-400 text-2xl" data-icon="mdi:check-decagram"></span>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium text-white">Сертифицированные мастера</div>
+                                    <div class="text-xs text-stone-400 mt-0.5">Обучены и аттестованы</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -top-4 -right-4 bg-neutral-900/80 backdrop-blur-xl rounded-2xl p-4 border border-white/10" style="animation: float 6s ease-in-out infinite;">
+                    <div class="flex items-center gap-2">
+                        <span class="iconify text-orange-400 text-xl" data-icon="mdi:star"></span>
+                        <span class="text-sm font-medium">4.9</span>
+                        <span class="text-xs text-stone-500">/ 5.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-up animate-up-d7">
+            <span class="text-[10px] uppercase tracking-widest text-stone-600">Скролл</span>
+            <div class="w-5 h-8 rounded-full border border-stone-700 flex justify-center pt-1.5">
+                <div class="w-1 h-2 rounded-full bg-stone-500" style="animation: frostPulse 2s ease-in-out infinite;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="py-8 border-y border-white/5 marquee-mask overflow-hidden">
+        <div class="flex marquee-track" style="width: max-content;">
+            <div class="flex items-center gap-12 px-6">
+                <span class="text-sm text-stone-600 whitespace-nowrap">ЧИСТКА КОНДИЦИОНЕРА</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">ЗАПРАВКА ФРЕОНОМ</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">РЕМОНТ КОНДИЦИОНЕРОВ</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">ОБСЛУЖИВАНИЕ</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">ДОЗАПРАВКА</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">УСТАНОВКА КОНДИЦИОНЕРА</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">МОНТАЖ</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">МОЙКА НАРУЖНОГО БЛОКА</span>
+                <span class="text-sky-800">❄</span>
+            </div>
+            <div class="flex items-center gap-12 px-6">
+                <span class="text-sm text-stone-600 whitespace-nowrap">ЧИСТКА КОНДИЦИОНЕРА</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">ЗАПРАВКА ФРЕОНОМ</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">РЕМОНТ КОНДИЦИОНЕРОВ</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">ОБСЛУЖИВАНИЕ</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">ДОЗАПРАВКА</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">УСТАНОВКА КОНДИЦИОНЕРА</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">МОНТАЖ</span>
+                <span class="text-sky-800">❄</span>
+                <span class="text-sm text-stone-600 whitespace-nowrap">МОЙКА НАРУЖНОГО БЛОКА</span>
+                <span class="text-sky-800">❄</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="reveal-section text-center mb-20">
+                <span class="text-xs font-semibold tracking-widest uppercase text-sky-400 mb-4 block">Наши услуги</span>
+                <h2 class="text-4xl sm:text-5xl font-medium tracking-tight leading-none mb-6">
+                    Полный спектр<br><span class="gradient-text">сервиса кондиционеров</span>
+                </h2>
+                <p class="text-lg font-light text-stone-500 max-w-2xl mx-auto">От чистки до установки — решаем любые задачи с кондиционерами в Алматы быстро и профессионально</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 reveal-section">
+                <!-- Card 1: Чистка -->
+                <div class="service-card group bg-neutral-900/30 border border-white/5 rounded-2xl overflow-hidden">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="images/cleaning.png" alt="Чистка внутреннего блока кондиционера" class="card-img w-full h-full object-cover opacity-60 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <div class="w-10 h-10 rounded-xl bg-sky-500/20 flex items-center justify-center">
+                                <span class="iconify text-sky-400 text-xl" data-icon="mdi:air-filter"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Чистка кондиционера</h3>
+                        <p class="text-sm text-stone-500 font-light leading-relaxed mb-4">Глубокая чистка внутреннего и наружного блока. Удаление пыли, грибка и бактерий из фильтров и радиатора.</p>
+                        <div class="card-line h-0.5 w-8 bg-stone-700 rounded-full transition-all duration-700"></div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Заправка -->
+                <div class="service-card group bg-neutral-900/30 border border-white/5 rounded-2xl overflow-hidden">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="images/refilling.png" alt="Заправка кондиционера фреоном — манометры" class="card-img w-full h-full object-cover opacity-60 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <div class="w-10 h-10 rounded-xl bg-orange-500/20 flex items-center justify-center">
+                                <span class="iconify text-orange-400 text-xl" data-icon="mdi:gas-cylinder"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Заправка кондиционера</h3>
+                        <p class="text-sm text-stone-500 font-light leading-relaxed mb-4">Полная заправка фреоном R32, R410A, R22. Контроль давления и проверка на утечки.</p>
+                        <div class="card-line h-0.5 w-8 bg-stone-700 rounded-full transition-all duration-700"></div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Ремонт -->
+                <div class="service-card group bg-neutral-900/30 border border-white/5 rounded-2xl overflow-hidden">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="images/repair.png" alt="Ремонт кондиционера — мастер с инструментами" class="card-img w-full h-full object-cover opacity-60 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <div class="w-10 h-10 rounded-xl bg-red-500/20 flex items-center justify-center">
+                                <span class="iconify text-red-400 text-xl" data-icon="mdi:wrench"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Ремонт кондиционера</h3>
+                        <p class="text-sm text-stone-500 font-light leading-relaxed mb-4">Диагностика и ремонт любой сложности. Замена компрессора, платы, датчиков, вентиляторов.</p>
+                        <div class="card-line h-0.5 w-8 bg-stone-700 rounded-full transition-all duration-700"></div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Обслуживание -->
+                <div class="service-card group bg-neutral-900/30 border border-white/5 rounded-2xl overflow-hidden">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="images/maintenance.png" alt="Техническое обслуживание кондиционера специалистом" class="card-img w-full h-full object-cover opacity-60 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center">
+                                <span class="iconify text-emerald-400 text-xl" data-icon="mdi:clipboard-check-outline"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Обслуживание</h3>
+                        <p class="text-sm text-stone-500 font-light leading-relaxed mb-4">Регулярное ТО кондиционеров. Продлеваем срок службы и предотвращаем поломки.</p>
+                        <div class="card-line h-0.5 w-8 bg-stone-700 rounded-full transition-all duration-700"></div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Установка -->
+                <div class="service-card group bg-neutral-900/30 border border-white/5 rounded-2xl overflow-hidden">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="images/installation.png" alt="Монтаж наружного блока кондиционера" class="card-img w-full h-full object-cover opacity-60 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <div class="w-10 h-10 rounded-xl bg-violet-500/20 flex items-center justify-center">
+                                <span class="iconify text-violet-400 text-xl" data-icon="mdi:plus-circle-outline"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Установка и монтаж</h3>
+                        <p class="text-sm text-stone-500 font-light leading-relaxed mb-4">Профессиональный монтаж сплит-систем и мультизональных систем. Трасса, дренаж, электрика.</p>
+                        <div class="card-line h-0.5 w-8 bg-stone-700 rounded-full transition-all duration-700"></div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Мойка -->
+                <div class="service-card group bg-neutral-900/30 border border-white/5 rounded-2xl overflow-hidden">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="images/washing.png" alt="Мойка наружного блока кондиционера на фасаде" class="card-img w-full h-full object-cover opacity-60 transition-all duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center">
+                                <span class="iconify text-cyan-400 text-xl" data-icon="mdi:water-outline"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Мойка наружного блока</h3>
+                        <p class="text-sm text-stone-500 font-light leading-relaxed mb-4">Промывка наружного блока аппаратным методом. Удаляем грязь, пыль и пух с радиатора.</p>
+                        <div class="card-line h-0.5 w-8 bg-stone-700 rounded-full transition-all duration-700"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider max-w-7xl mx-auto"></div>
+
+    <!-- Advantages -->
+    <section class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal-section relative">
+                    <div class="rounded-3xl overflow-hidden aspect-[4/3]" style="box-shadow: 0 25px 60px -12px rgba(0,0,0,0.5);">
+                        <!-- Реальное фото: техник работает с кондиционером -->
+                        <img src="images/advantages.png" alt="Мастер Frost Klima за работой" class="w-full h-full object-cover opacity-70" style="animation: slow-zoom 20s ease-in-out infinite;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-3xl"></div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-neutral-900/90 backdrop-blur-xl rounded-2xl p-6 border border-white/10 hidden sm:block" style="animation: float 6s ease-in-out infinite;">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-xl bg-sky-500/10 flex items-center justify-center">
+                                <span class="iconify text-sky-400 text-3xl" data-icon="mdi:shield-check"></span>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-medium">100%</div>
+                                <div class="text-xs text-stone-500">Гарантия на работы</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-section">
+                    <span class="text-xs font-semibold tracking-widest uppercase text-sky-400 mb-4 block">Почему мы</span>
+                    <h2 class="text-4xl sm:text-5xl font-medium tracking-tight leading-none mb-10">
+                        Надёжность в<br>каждой <span class="gradient-text">детали</span>
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4 group">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-sky-500/20 transition-colors">
+                                <span class="iconify text-sky-400 text-xl" data-icon="mdi:clock-fast"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Выезд за 1 час</h4>
+                                <p class="text-sm text-stone-500 font-light">Быстро реагируем на заявки по всему Алматы. Работаем без выходных.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 group">
+                            <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/20 transition-colors">
+                                <span class="iconify text-orange-400 text-xl" data-icon="mdi:cash-multiple"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Прозрачные цены</h4>
+                                <p class="text-sm text-stone-500 font-light">Фиксированная стоимость. Никаких скрытых доплат после начала работ.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 group">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-emerald-500/20 transition-colors">
+                                <span class="iconify text-emerald-400 text-xl" data-icon="mdi:certificate-outline"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Лицензированные мастера</h4>
+                                <p class="text-sm text-stone-500 font-light">Сертифицированные специалисты с опытом от 5 лет. Знаем все марки.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 group">
+                            <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-violet-500/20 transition-colors">
+                                <span class="iconify text-violet-400 text-xl" data-icon="mdi:package-variant-closed"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Оригинальные запчасти</h4>
+                                <p class="text-sm text-stone-500 font-light">Используем только сертифицированные комплектующие с гарантией производителя.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider max-w-7xl mx-auto"></div>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="reveal-section text-center mb-20">
+                <span class="text-xs font-semibold tracking-widest uppercase text-sky-400 mb-4 block">Тарифы</span>
+                <h2 class="text-4xl sm:text-5xl font-medium tracking-tight leading-none mb-6">
+                    Честные <span class="gradient-text">цены</span>
+                </h2>
+                <p class="text-lg font-light text-stone-500 max-w-2xl mx-auto">Выберите нужную услугу или закажите комплексное обслуживание со скидкой</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 reveal-section">
+                <div class="price-card bg-neutral-900/30 border border-white/5 rounded-2xl p-8 flex flex-col">
+                    <div class="mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center mb-4">
+                            <span class="iconify text-sky-400 text-2xl" data-icon="mdi:spray-bottle"></span>
+                        </div>
+                        <h3 class="text-xl font-medium mb-1">Чистка</h3>
+                        <p class="text-xs text-stone-500">Внутреннего + наружного блока</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-end gap-1">
+                            <span class="text-4xl font-medium tracking-tight">8 000</span>
+                            <span class="text-stone-500 text-sm mb-1">₸</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-8 flex-1">
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Чистка фильтров и радиатора
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Обработка антибактериальным средством
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Проверка дренажа
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Мойка наружного блока
+                        </li>
+                    </ul>
+                    <a href="#contact" class="w-full text-center bg-white/5 border border-white/10 text-white text-sm font-semibold py-3.5 rounded-full hover:bg-white/10 transition-all duration-300">
+                        Заказать
+                    </a>
+                </div>
+
+                <div class="price-card featured bg-neutral-900/30 border border-sky-500/30 rounded-2xl p-8 flex flex-col relative">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+                        <span class="bg-sky-500 text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Популярное</span>
+                    </div>
+                    <div class="mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center justify-center mb-4">
+                            <span class="iconify text-sky-400 text-2xl" data-icon="mdi:tune-vertical"></span>
+                        </div>
+                        <h3 class="text-xl font-medium mb-1">Чистка + Заправка</h3>
+                        <p class="text-xs text-stone-500">Комплексное обслуживание</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-end gap-1">
+                            <span class="text-4xl font-medium tracking-tight gradient-text">15 000</span>
+                            <span class="text-stone-500 text-sm mb-1">₸</span>
+                        </div>
+                        <div class="text-xs text-stone-600 mt-1 line-through">18 000 ₸</div>
+                    </div>
+                    <ul class="space-y-3 mb-8 flex-1">
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Всё из тарифа «Чистка»
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Полная заправка фреоном
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Проверка на утечки
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Тестовый запуск и замер температур
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            <span class="text-sky-400">Скидка 3 000 ₸</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn-primary w-full text-center bg-sky-500 text-white text-sm font-semibold py-3.5 rounded-full">
+                        Заказать со скидкой
+                    </a>
+                </div>
+
+                <div class="price-card bg-neutral-900/30 border border-white/5 rounded-2xl p-8 flex flex-col">
+                    <div class="mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center mb-4">
+                            <span class="iconify text-orange-400 text-2xl" data-icon="mdi:hammer-wrench"></span>
+                        </div>
+                        <h3 class="text-xl font-medium mb-1">Установка</h3>
+                        <p class="text-xs text-stone-500">Монтаж сплит-системы</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-end gap-1">
+                            <span class="text-4xl font-medium tracking-tight">от 45 000</span>
+                            <span class="text-stone-500 text-sm mb-1">₸</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-8 flex-1">
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Монтаж внутреннего блока
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Монтаж наружного блока
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Трасса до 3 метров (включена)
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Дренаж и электрика
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-stone-400">
+                            <span class="iconify text-emerald-400 text-base" data-icon="mdi:check-circle"></span>
+                            Вакуумизация и запуск
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn-warm w-full text-center bg-orange-500 text-white text-sm font-semibold py-3.5 rounded-full">
+                        Рассчитать стоимость
+                    </a>
+                </div>
+            </div>
+
+            <p class="text-center text-xs text-stone-600 mt-8 reveal-section">* Финальная стоимость может зависеть от модели кондиционера, сложности доступа и длины трассы</p>
+        </div>
+    </section>
+
+    <div class="divider max-w-7xl mx-auto"></div>
+
+    <!-- Process Section -->
+    <section id="process" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="reveal-section text-center mb-20">
+                <span class="text-xs font-semibold tracking-widest uppercase text-sky-400 mb-4 block">Процесс</span>
+                <h2 class="text-4xl sm:text-5xl font-medium tracking-tight leading-none mb-6">
+                    Как мы <span class="gradient-text">работаем</span>
+                </h2>
+                <p class="text-lg font-light text-stone-500 max-w-2xl mx-auto">Простой и понятный процесс от заявки до результата</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 reveal-section">
+                <div class="relative text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-sky-500/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-sky-500/20 transition-colors">
+                        <span class="text-2xl font-medium gradient-text">01</span>
+                    </div>
+                    <h4 class="font-medium mb-2">Заявка</h4>
+                    <p class="text-sm text-stone-500 font-light">Оставьте заявку на сайте или позвоните нам. Мы перезвоним за 5 минут.</p>
+                    <div class="hidden lg:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-px bg-gradient-to-r from-sky-500/30 to-transparent"></div>
+                </div>
+                <div class="relative text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-sky-500/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-sky-500/20 transition-colors">
+                        <span class="text-2xl font-medium gradient-text">02</span>
+                    </div>
+                    <h4 class="font-medium mb-2">Диагностика</h4>
+                    <p class="text-sm text-stone-500 font-light">Мастер приезжает, проводит осмотр и называет точную стоимость.</p>
+                    <div class="hidden lg:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-px bg-gradient-to-r from-sky-500/30 to-transparent"></div>
+                </div>
+                <div class="relative text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-sky-500/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-sky-500/20 transition-colors">
+                        <span class="text-2xl font-medium gradient-text">03</span>
+                    </div>
+                    <h4 class="font-medium mb-2">Выполнение</h4>
+                    <p class="text-sm text-stone-500 font-light">Выполняем все работы с использованием профессионального оборудования.</p>
+                    <div class="hidden lg:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-px bg-gradient-to-r from-sky-500/30 to-transparent"></div>
+                </div>
+                <div class="text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-emerald-500/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-500/20 transition-colors">
+                        <span class="iconify text-emerald-400 text-2xl" data-icon="mdi:check-bold"></span>
+                    </div>
+                    <h4 class="font-medium mb-2">Гарантия</h4>
+                    <p class="text-sm text-stone-500 font-light">Выдаём гарантию на все виды работ. Если что-то — исправим бесплатно.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider max-w-7xl mx-auto"></div>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="reveal-section text-center mb-20">
+                <span class="text-xs font-semibold tracking-widest uppercase text-sky-400 mb-4 block">Портфолио</span>
+                <h2 class="text-4xl sm:text-5xl font-medium tracking-tight leading-none mb-6">
+                    Наши <span class="gradient-text">работы</span>
+                </h2>
+                <p class="text-lg font-light text-stone-500 max-w-2xl mx-auto">Реальные фотографии с наших объектов в Алматы</p>
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 reveal-section">
+                <!-- Большое фото: настенный кондиционер в интерьере -->
+                <div class="gallery-item col-span-2 row-span-2 relative rounded-2xl overflow-hidden cursor-pointer aspect-square">
+                    <img src="images/hero.png" alt="Установка сплит-системы в современной гостиной" class="w-full h-full object-cover opacity-70 transition-all duration-700">
+                    <div class="gallery-overlay absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-500 flex items-end p-6">
+                        <div>
+                            <div class="text-sm font-medium">Установка сплит-системы</div>
+                            <div class="text-xs text-stone-400">ЖК «Панорама», Алматы</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Внутренний блок крупным планом -->
+                <div class="gallery-item relative rounded-2xl overflow-hidden cursor-pointer aspect-square">
+                    <img src="images/cleaning.png" alt="Внутренний блок кондиционера после чистки" class="w-full h-full object-cover opacity-70 transition-all duration-700">
+                    <div class="gallery-overlay absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-500 flex items-end p-4">
+                        <div class="text-xs font-medium">После чистки</div>
+                    </div>
+                </div>
+                <!-- Наружный блок на фасаде -->
+                <div class="gallery-item relative rounded-2xl overflow-hidden cursor-pointer aspect-square">
+                    <img src="images/washing.png" alt="Наружный блок на фасаде здания" class="w-full h-full object-cover opacity-70 transition-all duration-700">
+                    <div class="gallery-overlay absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-500 flex items-end p-4">
+                        <div class="text-xs font-medium">Наружный блок</div>
+                    </div>
+                </div>
+                <!-- Монтаж трассы -->
+                <div class="gallery-item relative rounded-2xl overflow-hidden cursor-pointer aspect-square">
+                    <img src="images/installation.png" alt="Монтаж фреоновой трассы" class="w-full h-full object-cover opacity-70 transition-all duration-700">
+                    <div class="gallery-overlay absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-500 flex items-end p-4">
+                        <div class="text-xs font-medium">Монтаж трассы</div>
+                    </div>
+                </div>
+                <!-- Ремонт: инструменты -->
+                <div class="gallery-item relative rounded-2xl overflow-hidden cursor-pointer aspect-square">
+                    <img src="images/tools.png" alt="Инструменты для ремонта кондиционера" class="w-full h-full object-cover opacity-70 transition-all duration-700">
+                    <div class="gallery-overlay absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-500 flex items-end p-4">
+                        <div class="text-xs font-medium">Диагностика</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider max-w-7xl mx-auto"></div>
+
+    <!-- Brands Marquee -->
+    <section class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 mb-12">
+            <div class="reveal-section text-center">
+                <span class="text-xs font-semibold tracking-widest uppercase text-stone-600 mb-2 block">Работаем со всеми брендами</span>
+            </div>
+        </div>
+        <div class="marquee-mask overflow-hidden">
+            <div class="flex marquee-track" style="width: max-content;">
+                <div class="flex items-center gap-16 px-8">
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Daikin</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Mitsubishi</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Samsung</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">LG</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Toshiba</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Gree</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Midea</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Haier</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Ballu</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Aux</span>
+                </div>
+                <div class="flex items-center gap-16 px-8">
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Daikin</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Mitsubishi</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Samsung</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">LG</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Toshiba</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Gree</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Midea</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Haier</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Ballu</span>
+                    <span class="text-2xl font-light text-stone-700 whitespace-nowrap tracking-wide">Aux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider max-w-7xl mx-auto"></div>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-32 relative">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="reveal-section text-center mb-20">
+                <span class="text-xs font-semibold tracking-widest uppercase text-sky-400 mb-4 block">FAQ</span>
+                <h2 class="text-4xl sm:text-5xl font-medium tracking-tight leading-none mb-6">
+                    Частые <span class="gradient-text">вопросы</span>
+                </h2>
+            </div>
+
+            <div class="space-y-3 reveal-section">
+                <div class="faq-item border border-white/5 rounded-2xl overflow-hidden bg-neutral-900/20 hover:border-white/10 transition-colors cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between p-6">
+                        <span class="text-sm font-medium pr-4">Как часто нужно чистить кондиционер?</span>
+                        <span class="iconify faq-icon text-stone-500 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
+                    </div>
+                    <div class="faq-answer px-6">
+                        <p class="text-sm text-stone-500 font-light leading-relaxed pb-6">Рекомендуем чистить кондиционер минимум 2 раза в год — весной перед сезоном охлаждения и осенью перед сезоном отопления. При интенсивной эксплуатации или наличии домашних животных — каждые 2-3 месяца.</p>
+                    </div>
+                </div>
+                <div class="faq-item border border-white/5 rounded-2xl overflow-hidden bg-neutral-900/20 hover:border-white/10 transition-colors cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between p-6">
+                        <span class="text-sm font-medium pr-4">Как понять, что нужна заправка?</span>
+                        <span class="iconify faq-icon text-stone-500 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
+                    </div>
+                    <div class="faq-answer px-6">
+                        <p class="text-sm text-stone-500 font-light leading-relaxed pb-6">Основные признаки: кондиционер плохо охлаждает, на наружном блоке образуется иней, слышен шипящий звук, увеличилось потребление электроэнергии. Если заметили хоть один симптом — вызывайте мастера для диагностики.</p>
+                    </div>
+                </div>
+                <div class="faq-item border border-white/5 rounded-2xl overflow-hidden bg-neutral-900/20 hover:border-white/10 transition-colors cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between p-6">
+                        <span class="text-sm font-medium pr-4">Сколько времени занимает чистка?</span>
+                        <span class="iconify faq-icon text-stone-500 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
+                    </div>
+                    <div class="faq-answer px-6">
+                        <p class="text-sm text-stone-500 font-light leading-relaxed pb-6">Стандартная чистка одного кондиционера занимает 40-60 минут. Комплексное обслуживание с заправкой — около 1,5 часов. Установка сплит-системы — от 3 до 6 часов в зависимости от сложности.</p>
+                    </div>
+                </div>
+                <div class="faq-item border border-white/5 rounded-2xl overflow-hidden bg-neutral-900/20 hover:border-white/10 transition-colors cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between p-6">
+                        <span class="text-sm font-medium pr-4">Какие районы Алматы вы обслуживаете?</span>
+                        <span class="iconify faq-icon text-stone-500 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
+                    </div>
+                    <div class="faq-answer px-6">
+                        <p class="text-sm text-stone-500 font-light leading-relaxed pb-6">Работаем по всему городу: Алмалы, Бостандык, Ауэзовский, Медеуский, Наурызбайский, Алатауский, Жетысуский районы. Выезд в любой район — бесплатно при заказе от 8 000 ₸.</p>
+                    </div>
+                </div>
+                <div class="faq-item border border-white/5 rounded-2xl overflow-hidden bg-neutral-900/20 hover:border-white/10 transition-colors cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between p-6">
+                        <span class="text-sm font-medium pr-4">Есть ли гарантия на работы?</span>
+                        <span class="iconify faq-icon text-stone-500 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
+                    </div>
+                    <div class="faq-answer px-6">
+                        <p class="text-sm text-stone-500 font-light leading-relaxed pb-6">Да, мы даём гарантию 1 год на все выполненные работы и 6 месяцев на заправку. Если в гарантийный период возникнет проблема по нашей вине — бесплатно исправим. На запчасти действует гарантия производителя.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider max-w-7xl mx-auto"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="reveal-section">
+                    <span class="text-xs font-semibold tracking-widest uppercase text-sky-400 mb-4 block">Контакты</span>
+                    <h2 class="text-4xl sm:text-5xl font-medium tracking-tight leading-none mb-6">
+                        Оставьте <span class="gradient-text">заявку</span>
+                    </h2>
+                    <p class="text-lg font-light text-stone-500 mb-10 max-w-md">Перезвоним в течение 5 минут. Бесплатная консультация и расчёт стоимости.</p>
+
+                    <div class="space-y-6 mb-10">
+                        <a href="tel:+77472040401" class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center group-hover:bg-sky-500/20 transition-colors">
+                                <span class="iconify text-sky-400 text-xl" data-icon="mdi:phone"></span>
+                            </div>
+                            <div>
+                                <div class="text-sm text-stone-500">Телефон</div>
+                                <div class="font-medium group-hover:text-sky-400 transition-colors">+7 (747) 204-04-01</div>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/77472040401" target="_blank" class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors">
+                                <span class="iconify text-emerald-400 text-xl" data-icon="mdi:whatsapp"></span>
+                            </div>
+                            <div>
+                                <div class="text-sm text-stone-500">WhatsApp</div>
+                                <div class="font-medium group-hover:text-emerald-400 transition-colors">+7 (747) 204-04-01</div>
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center">
+                                <span class="iconify text-orange-400 text-xl" data-icon="mdi:map-marker"></span>
+                            </div>
+                            <div>
+                                <div class="text-sm text-stone-500">Адрес</div>
+                                <div class="font-medium">г. Алматы, ул. Абая 52</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center">
+                                <span class="iconify text-violet-400 text-xl" data-icon="mdi:clock-outline"></span>
+                            </div>
+                            <div>
+                                <div class="text-sm text-stone-500">Режим работы</div>
+                                <div class="font-medium">Ежедневно 9:00 — 21:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-section">
+                    <form id="contactForm" class="bg-neutral-900/30 border border-white/5 rounded-2xl p-8 space-y-5">
+                        <div>
+                            <label class="text-xs text-stone-500 mb-2 block">Ваше имя</label>
+                            <input type="text" placeholder="Как к вам обращаться?" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-sm text-white placeholder:text-stone-600 focus:outline-none focus:border-sky-500/50 transition-colors">
+                        </div>
+                        <div>
+                            <label class="text-xs text-stone-500 mb-2 block">Телефон</label>
+                            <input type="tel" placeholder="+7 (___) ___-__-__" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-sm text-white placeholder:text-stone-600 focus:outline-none focus:border-sky-500/50 transition-colors">
+                        </div>
+                        <div>
+                            <label class="text-xs text-stone-500 mb-2 block">Услуга</label>
+                            <select required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-sm text-stone-400 focus:outline-none focus:border-sky-500/50 transition-colors appearance-none" style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2378716c' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E&quot;); background-repeat: no-repeat; background-position: right 1rem center;">
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option value="clean">Чистка кондиционера</option>
+                                <option value="refill">Заправка кондиционера</option>
+                                <option value="repair">Ремонт кондиционера</option>
+                                <option value="service">Обслуживание</option>
+                                <option value="install">Установка / монтаж</option>
+                                <option value="wash">Мойка наружного блока</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-xs text-stone-500 mb-2 block">Комментарий <span class="text-stone-700">(необязательно)</span></label>
+                            <textarea rows="3" placeholder="Марка кондиционера, описание проблемы..." class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-sm text-white placeholder:text-stone-600 focus:outline-none focus:border-sky-500/50 transition-colors resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full bg-sky-500 text-white text-sm font-semibold py-4 rounded-full flex items-center justify-center gap-2">
+                            <span class="iconify text-lg" data-icon="mdi:send"></span>
+                            Отправить заявку
+                        </button>
+                        <p class="text-[10px] text-stone-600 text-center">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-16 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="reveal-section relative rounded-3xl overflow-hidden" style="background: linear-gradient(135deg, rgba(56,189,248,0.1), rgba(14,165,233,0.05), rgba(34,211,238,0.08));">
+                <div class="absolute inset-0 border border-sky-500/10 rounded-3xl"></div>
+                <div class="relative py-16 px-8 text-center">
+                    <span class="iconify text-sky-400 text-5xl mb-6 inline-block" data-icon="mdi:snowflake" style="animation: float 4s ease-in-out infinite;"></span>
+                    <h3 class="text-3xl sm:text-4xl font-medium tracking-tight mb-4">Не ждите, пока сломается</h3>
+                    <p class="text-stone-500 font-light mb-8 max-w-xl mx-auto">Регулярное обслуживание обходится в 5 раз дешевле ремонта. Закажите чистку сегодня и продлите жизнь своему кондиционеру.</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="#contact" class="btn-primary inline-flex items-center gap-2 bg-sky-500 text-white text-sm font-semibold px-8 py-4 rounded-full">
+                            Заказать чистку от 8 000 ₸
+                            <span class="iconify" data-icon="mdi:arrow-right"></span>
+                        </a>
+                        <a href="https://wa.me/77472040401" target="_blank" class="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-sm font-semibold px-8 py-4 rounded-full hover:bg-emerald-500/30 transition-all duration-300">
+                            <span class="iconify" data-icon="mdi:whatsapp"></span>
+                            Написать в WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, #38bdf8, #0ea5e9);">
+                            <span class="iconify text-white text-lg" data-icon="mdi:snowflake"></span>
+                        </div>
+                        <div>
+                            <span class="text-base font-semibold text-white">Frost</span>
+                            <span class="text-base font-light gradient-text">Klima</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-stone-600 font-light leading-relaxed">Профессиональный сервис кондиционеров в Алматы с 2016 года.</p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-4">Услуги</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-sm text-stone-600 hover:text-white transition-colors">Чистка кондиционера</a></li>
+                        <li><a href="#services" class="text-sm text-stone-600 hover:text-white transition-colors">Заправка фреоном</a></li>
+                        <li><a href="#services" class="text-sm text-stone-600 hover:text-white transition-colors">Ремонт кондиционера</a></li>
+                        <li><a href="#services" class="text-sm text-stone-600 hover:text-white transition-colors">Установка и монтаж</a></li>
+                        <li><a href="#services" class="text-sm text-stone-600 hover:text-white transition-colors">Мойка наружного блока</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-4">Информация</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#pricing" class="text-sm text-stone-600 hover:text-white transition-colors">Цены</a></li>
+                        <li><a href="#process" class="text-sm text-stone-600 hover:text-white transition-colors">Как работаем</a></li>
+                        <li><a href="#faq" class="text-sm text-stone-600 hover:text-white transition-colors">Вопросы и ответы</a></li>
+                        <li><a href="#gallery" class="text-sm text-stone-600 hover:text-white transition-colors">Наши работы</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-semibold tracking-widest uppercase text-stone-500 mb-4">Связаться</h4>
+                    <ul class="space-y-3">
+                        <li><a href="tel:+77472040401" class="text-sm text-stone-600 hover:text-white transition-colors">+7 (747) 204-04-01</a></li>
+                        <li><a href="https://wa.me/77472040401" class="text-sm text-stone-600 hover:text-white transition-colors">WhatsApp</a></li>
+                        <li><span class="text-sm text-stone-600">г. Алматы, ул. Абая 52</span></li>
+                        <li><span class="text-sm text-stone-600">Ежедневно 9:00 — 21:00</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="divider mb-8"></div>
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-stone-700">© 2024 Frost Klima. Все права защищены.</p>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors">
+                        <span class="iconify text-stone-500 text-lg" data-icon="mdi:instagram"></span>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors">
+                        <span class="iconify text-stone-500 text-lg" data-icon="mdi:facebook"></span>
+                    </a>
+                    <a href="https://wa.me/77472040401" class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors">
+                        <span class="iconify text-stone-500 text-lg" data-icon="mdi:whatsapp"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div id="toast" class="toast">
+        <div class="flex items-center gap-3">
+            <span class="iconify text-emerald-400 text-xl" data-icon="mdi:check-circle"></span>
+            <div>
+                <div class="text-sm font-medium" id="toastTitle">Заявка отправлена!</div>
+                <div class="text-xs text-stone-400" id="toastMessage">Перезвоним в течение 5 минут</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Navigation
+        const burger = document.getElementById('burger');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        let navOpen = false;
+
+        burger.addEventListener('click', () => {
+            navOpen = !navOpen;
+            mobileNav.classList.toggle('open');
+            document.getElementById('burger1').style.transform = navOpen ? 'rotate(45deg) translate(4px, 4px)' : '';
+            document.getElementById('burger2').style.opacity = navOpen ? '0' : '1';
+            document.getElementById('burger3').style.transform = navOpen ? 'rotate(-45deg) translate(2px, -2px)' : '';
+            document.getElementById('burger3').style.width = navOpen ? '1.5rem' : '1rem';
+            document.body.style.overflow = navOpen ? 'hidden' : '';
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navOpen = false;
+                mobileNav.classList.remove('open');
+                document.getElementById('burger1').style.transform = '';
+                document.getElementById('burger2').style.opacity = '1';
+                document.getElementById('burger3').style.transform = '';
+                document.getElementById('burger3').style.width = '1rem';
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Navbar background on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(5, 5, 5, 0.8)';
+                navbar.style.borderBottom = '1px solid rgba(255,255,255,0.05)';
+            } else {
+                navbar.style.background = 'transparent';
+                navbar.style.borderBottom = 'none';
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Section reveal on scroll
+        const revealSections = document.querySelectorAll('.reveal-section');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        revealSections.forEach(section => revealObserver.observe(section));
+
+        // Counter animation
+        const counters = document.querySelectorAll('.counter[data-target]');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.dataset.target);
+                    animateCounter(entry.target, target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        counters.forEach(counter => counterObserver.observe(counter));
+
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 60;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current).toLocaleString('ru-RU');
+            }, 30);
+        }
+
+        // FAQ toggle
+        function toggleFaq(item) {
+            const answer = item.querySelector('.faq-answer');
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(faq => {
+                faq.classList.remove('active');
+                faq.querySelector('.faq-answer').classList.remove('open');
+            });
+            if (!isActive) {
+                item.classList.add('active');
+                answer.classList.add('open');
+            }
+        }
+
+        // Form submission
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = form.querySelector('input[type="text"]').value;
+            const phone = form.querySelector('input[type="tel"]').value;
+            const serviceSelect = form.querySelector('select');
+            const service = serviceSelect.options[serviceSelect.selectedIndex].text;
+            const comment = form.querySelector('textarea').value;
+            
+            let message = `Здравствуйте! Я хочу оставить заявку.\n\n*Имя:* ${name}\n*Телефон:* ${phone}\n*Услуга:* ${service}`;
+            if (comment) {
+                message += `\n*Комментарий:* ${comment}`;
+            }
+            
+            const whatsappUrl = `https://wa.me/77472040401?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            
+            showToast('Перенаправляем в WhatsApp...', 'Сейчас откроется чат с мастером');
+            form.reset();
+        });
+
+        // Toast
+        function showToast(title, message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastTitle').textContent = title;
+            document.getElementById('toastMessage').textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 4000);
+        }
+
+        // Phone mask
+        const phoneInput = form.querySelector('input[type="tel"]');
+        phoneInput.addEventListener('input', (e) => {
+            let val = e.target.value.replace(/\D/g, '');
+            if (val.length > 0 && val[0] === '8') val = '7' + val.slice(1);
+            if (val.length > 11) val = val.slice(0, 11);
+            let formatted = '';
+            if (val.length > 0) formatted += '+' + val[0];
+            if (val.length > 1) formatted += ' (' + val.slice(1, 4);
+            if (val.length > 4) formatted += ') ' + val.slice(4, 7);
+            if (val.length > 7) formatted += '-' + val.slice(7, 9);
+            if (val.length > 9) formatted += '-' + val.slice(9, 11);
+            e.target.value = formatted;
+        });
+    </script>
+</body>
+</html>
