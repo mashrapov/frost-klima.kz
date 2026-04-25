@@ -474,17 +474,23 @@
                     Чистка, заправка, ремонт и установка кондиционеров. Профессиональный сервис с гарантией качества в
                     Алматы.
                 </p>
-                <div class="animate-up animate-up-d4 flex flex-wrap gap-4 mb-12">
-                    <a href="#contact"
-                        class="btn-primary inline-flex items-center gap-3 bg-sky-500 text-white text-sm font-semibold px-8 py-4 rounded-full">
-                        Оставить заявку
-                        <span class="iconify text-lg" data-icon="mdi:arrow-right"></span>
-                    </a>
-                    <a href="tel:+77472040401"
-                        class="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-white text-sm font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300">
-                        <span class="iconify text-lg text-sky-400" data-icon="mdi:phone"></span>
-                        Позвонить
-                    </a>
+                <div class="animate-up animate-up-d4 relative mb-12 w-full">
+                    <div class="flex flex-col sm:flex-row gap-4 relative z-10 w-fit pr-24 sm:pr-0">
+                        <a href="#contact"
+                            class="btn-primary inline-flex items-center gap-3 bg-sky-500 text-white text-sm font-semibold px-8 py-4 rounded-full">
+                            Оставить заявку
+                            <span class="iconify text-lg" data-icon="mdi:arrow-right"></span>
+                        </a>
+                        <a href="tel:+77472040401"
+                            class="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-white text-sm font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300">
+                            <span class="iconify text-lg text-sky-400" data-icon="mdi:phone"></span>
+                            Позвонить
+                        </a>
+                    </div>
+                    
+                    <div class="lg:hidden absolute -right-2 top-1/2 -translate-y-1/2 w-[45%] max-w-[180px] pointer-events-none z-0" style="animation: float 6s ease-in-out infinite;">
+                        <img src="images/mobile_ac_hero.png" alt="Кондиционер" class="w-full h-auto object-contain filter drop-shadow-[0_0_20px_rgba(56,189,248,0.3)]">
+                    </div>
                 </div>
                 <div class="animate-up animate-up-d5 flex gap-10">
                     <div>
@@ -744,96 +750,6 @@
 
     <div class="divider max-w-7xl mx-auto"></div>
 
-    <!-- Advantages -->
-    <section class="py-32 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="reveal-section relative">
-                    <div class="rounded-3xl overflow-hidden aspect-[4/3]"
-                        style="box-shadow: 0 25px 60px -12px rgba(0,0,0,0.5);">
-                        <!-- Реальное фото: техник работает с кондиционером -->
-                        <img src="images/advantages.png" alt="Мастер Frost Klima за работой"
-                            class="w-full h-full object-cover opacity-70"
-                            style="animation: slow-zoom 20s ease-in-out infinite;">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-3xl">
-                        </div>
-                    </div>
-                    <div class="absolute -bottom-6 -right-6 bg-neutral-900/90 backdrop-blur-xl rounded-2xl p-6 border border-white/10 hidden sm:block"
-                        style="animation: float 6s ease-in-out infinite;">
-                        <div class="flex items-center gap-4">
-                            <div class="w-14 h-14 rounded-xl bg-sky-500/10 flex items-center justify-center">
-                                <span class="iconify text-sky-400 text-3xl" data-icon="mdi:shield-check"></span>
-                            </div>
-                            <div>
-                                <div class="text-2xl font-medium">100%</div>
-                                <div class="text-xs text-stone-500">Гарантия на работы</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="reveal-section">
-                    <span class="text-xs font-semibold tracking-widest uppercase text-sky-400 mb-4 block">Почему
-                        мы</span>
-                    <h2 class="text-4xl sm:text-5xl font-medium tracking-tight leading-none mb-10">
-                        Надёжность в<br>каждой <span class="gradient-text">детали</span>
-                    </h2>
-                    <div class="space-y-6">
-                        <div class="flex gap-4 group">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-sky-500/20 transition-colors">
-                                <span class="iconify text-sky-400 text-xl" data-icon="mdi:clock-fast"></span>
-                            </div>
-                            <div>
-                                <h4 class="font-medium mb-1">Выезд за 1 час</h4>
-                                <p class="text-sm text-stone-500 font-light">Быстро реагируем на заявки по всему Алматы.
-                                    Работаем без выходных.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 group">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/20 transition-colors">
-                                <span class="iconify text-orange-400 text-xl" data-icon="mdi:cash-multiple"></span>
-                            </div>
-                            <div>
-                                <h4 class="font-medium mb-1">Прозрачные цены</h4>
-                                <p class="text-sm text-stone-500 font-light">Фиксированная стоимость. Никаких скрытых
-                                    доплат после начала работ.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 group">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-emerald-500/20 transition-colors">
-                                <span class="iconify text-emerald-400 text-xl"
-                                    data-icon="mdi:certificate-outline"></span>
-                            </div>
-                            <div>
-                                <h4 class="font-medium mb-1">Лицензированные мастера</h4>
-                                <p class="text-sm text-stone-500 font-light">Сертифицированные специалисты с опытом от 5
-                                    лет. Знаем все марки.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 group">
-                            <div
-                                class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-violet-500/20 transition-colors">
-                                <span class="iconify text-violet-400 text-xl"
-                                    data-icon="mdi:package-variant-closed"></span>
-                            </div>
-                            <div>
-                                <h4 class="font-medium mb-1">Оригинальные запчасти</h4>
-                                <p class="text-sm text-stone-500 font-light">Используем только сертифицированные
-                                    комплектующие с гарантией производителя.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="divider max-w-7xl mx-auto"></div>
-
     <!-- Pricing Section -->
     <section id="pricing" class="py-32 relative">
         <div class="max-w-7xl mx-auto px-6">
@@ -978,6 +894,96 @@
 
             <p class="text-center text-xs text-stone-600 mt-8 reveal-section">* Финальная стоимость может зависеть от
                 модели кондиционера, сложности доступа и длины трассы</p>
+        </div>
+    </section>
+
+    <div class="divider max-w-7xl mx-auto"></div>
+
+    <!-- Advantages -->
+    <section class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal-section relative">
+                    <div class="rounded-3xl overflow-hidden aspect-[4/3]"
+                        style="box-shadow: 0 25px 60px -12px rgba(0,0,0,0.5);">
+                        <!-- Реальное фото: техник работает с кондиционером -->
+                        <img src="images/advantages.png" alt="Мастер Frost Klima за работой"
+                            class="w-full h-full object-cover opacity-70"
+                            style="animation: slow-zoom 20s ease-in-out infinite;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-3xl">
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-neutral-900/90 backdrop-blur-xl rounded-2xl p-6 border border-white/10 hidden sm:block"
+                        style="animation: float 6s ease-in-out infinite;">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-xl bg-sky-500/10 flex items-center justify-center">
+                                <span class="iconify text-sky-400 text-3xl" data-icon="mdi:shield-check"></span>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-medium">100%</div>
+                                <div class="text-xs text-stone-500">Гарантия на работы</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-section">
+                    <span class="text-xs font-semibold tracking-widest uppercase text-sky-400 mb-4 block">Почему
+                        мы</span>
+                    <h2 class="text-4xl sm:text-5xl font-medium tracking-tight leading-none mb-10">
+                        Надёжность в<br>каждой <span class="gradient-text">детали</span>
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4 group">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-sky-500/20 transition-colors">
+                                <span class="iconify text-sky-400 text-xl" data-icon="mdi:clock-fast"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Выезд за 1 час</h4>
+                                <p class="text-sm text-stone-500 font-light">Быстро реагируем на заявки по всему Алматы.
+                                    Работаем без выходных.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 group">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/20 transition-colors">
+                                <span class="iconify text-orange-400 text-xl" data-icon="mdi:cash-multiple"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Прозрачные цены</h4>
+                                <p class="text-sm text-stone-500 font-light">Фиксированная стоимость. Никаких скрытых
+                                    доплат после начала работ.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 group">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-emerald-500/20 transition-colors">
+                                <span class="iconify text-emerald-400 text-xl"
+                                    data-icon="mdi:certificate-outline"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Лицензированные мастера</h4>
+                                <p class="text-sm text-stone-500 font-light">Сертифицированные специалисты с опытом от 5
+                                    лет. Знаем все марки.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 group">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center flex-shrink-0 group-hover:bg-violet-500/20 transition-colors">
+                                <span class="iconify text-violet-400 text-xl"
+                                    data-icon="mdi:package-variant-closed"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Оригинальные запчасти</h4>
+                                <p class="text-sm text-stone-500 font-light">Используем только сертифицированные
+                                    комплектующие с гарантией производителя.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
