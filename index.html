@@ -487,9 +487,11 @@
                             Позвонить
                         </a>
                     </div>
-                    
-                    <div class="lg:hidden absolute -right-2 top-1/2 -translate-y-1/2 w-[45%] max-w-[180px] pointer-events-none z-0" style="animation: float 6s ease-in-out infinite;">
-                        <img src="images/mobile_ac_hero.png" alt="Кондиционер" class="w-full h-auto object-contain filter drop-shadow-[0_0_20px_rgba(56,189,248,0.3)]">
+
+                    <div class="lg:hidden absolute -right-4 -top-6 w-[50%] max-w-[180px] pointer-events-none z-0"
+                        style="animation: float 6s ease-in-out infinite;">
+                        <img src="images/mobile_ac_hero.png" alt="Кондиционер"
+                            class="w-full h-auto object-contain filter drop-shadow-[0_0_20px_rgba(56,189,248,0.3)]">
                     </div>
                 </div>
                 <div class="animate-up animate-up-d5 flex gap-10">
@@ -502,7 +504,8 @@
                         <div class="text-xs text-stone-500 mt-1">Лет опыта</div>
                     </div>
                     <div>
-                        <div class="text-3xl font-medium tracking-tight">1<span class="gradient-text"> год</span></div>
+                        <div class="text-3xl font-medium tracking-tight">1<span class="gradient-text"> сезон</span>
+                        </div>
                         <div class="text-xs text-stone-500 mt-1">Гарантия</div>
                     </div>
                 </div>
@@ -773,7 +776,7 @@
                     </div>
                     <div class="mb-6">
                         <div class="flex items-end gap-1">
-                            <span class="text-4xl font-medium tracking-tight">от 8 000</span>
+                            <span class="text-4xl font-medium tracking-tight">от 12 000</span>
                             <span class="text-stone-500 text-sm mb-1">₸</span>
                         </div>
                     </div>
@@ -816,10 +819,10 @@
                     </div>
                     <div class="mb-6">
                         <div class="flex items-end gap-1">
-                            <span class="text-4xl font-medium tracking-tight gradient-text">от 15 000</span>
+                            <span class="text-4xl font-medium tracking-tight gradient-text">от 20 000</span>
                             <span class="text-stone-500 text-sm mb-1">₸</span>
                         </div>
-                        <div class="text-xs text-stone-600 mt-1 line-through">от 18 000 ₸</div>
+                        <div class="text-xs text-stone-600 mt-1 line-through">от 25 000 ₸</div>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1">
                         <li class="flex items-center gap-3 text-sm text-stone-400">
@@ -1229,8 +1232,9 @@
                         <span class="iconify faq-icon text-stone-500 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
                     </div>
                     <div class="faq-answer px-6">
-                        <p class="text-sm text-stone-500 font-light leading-relaxed pb-6">Да, мы даём гарантию 1 год на
-                            все выполненные работы и 6 месяцев на заправку. Если в гарантийный период возникнет проблема
+                        <p class="text-sm text-stone-500 font-light leading-relaxed pb-6">Да, мы даём гарантию 1 сезон
+                            на
+                            все выполненные работы и 1 сезон на заправку. Если в гарантийный период возникнет проблема
                             по нашей вине — бесплатно исправим. На запчасти действует гарантия производителя.</p>
                     </div>
                 </div>
@@ -1455,10 +1459,7 @@
     </footer>
 
     <!-- Floating Phone Button -->
-    <a id="phoneFloat"
-        href="tel:+77472040401"
-        aria-label="Позвонить"
-        style="
+    <a id="phoneFloat" href="tel:+77472040401" aria-label="Позвонить" style="
             position: fixed;
             right: 20px;
             bottom: 104px;
@@ -1473,20 +1474,18 @@
             box-shadow: 0 4px 20px rgba(56, 189, 248, 0.45);
             text-decoration: none;
             transition: transform 0.25s ease, box-shadow 0.25s ease;
-        "
-        onmouseover="this.style.transform='scale(1.12)';this.style.boxShadow='0 8px 28px rgba(56,189,248,0.65)'"
-        onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 20px rgba(56,189,248,0.45)'"
-    >
+        " onmouseover="this.style.transform='scale(1.12)';this.style.boxShadow='0 8px 28px rgba(56,189,248,0.65)'"
+        onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 20px rgba(56,189,248,0.45)'">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="white">
-            <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.47 11.47 0 0 0 3.59.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.47 11.47 0 0 0 .57 3.59 1 1 0 0 1-.25 1.01z"/>
+            <path
+                d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.47 11.47 0 0 0 3.59.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.47 11.47 0 0 0 .57 3.59 1 1 0 0 1-.25 1.01z" />
         </svg>
     </a>
 
     <!-- Floating WhatsApp Button -->
     <a id="whatsappFloat"
         href="https://wa.me/77472040401?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BE%D0%B1%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B0%D1%85"
-        target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp"
-        style="
+        target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp" style="
             position: fixed;
             right: 20px;
             bottom: 24px;
@@ -1501,10 +1500,8 @@
             box-shadow: 0 4px 24px rgba(37, 211, 102, 0.45);
             text-decoration: none;
             transition: transform 0.25s ease, box-shadow 0.25s ease;
-        "
-        onmouseover="this.style.transform='scale(1.12)';this.style.boxShadow='0 8px 32px rgba(37,211,102,0.6)'"
-        onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 24px rgba(37,211,102,0.45)'"
-    >
+        " onmouseover="this.style.transform='scale(1.12)';this.style.boxShadow='0 8px 32px rgba(37,211,102,0.6)'"
+        onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 24px rgba(37,211,102,0.45)'">
         <!-- Pulse ring -->
         <span style="
             position: absolute;
@@ -1514,16 +1511,29 @@
             animation: waFloat 2.2s ease-out infinite;
         "></span>
         <!-- WhatsApp SVG icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="white" style="position:relative;z-index:1;">
-            <path d="M16 2C8.268 2 2 8.268 2 16c0 2.52.676 4.88 1.856 6.915L2 30l7.294-1.82A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.54 11.54 0 0 1-5.88-1.602l-.42-.25-4.33 1.08 1.1-4.22-.274-.434A11.56 11.56 0 0 1 4.4 16C4.4 9.593 9.593 4.4 16 4.4S27.6 9.593 27.6 16 22.407 27.6 16 27.6zm6.338-8.67c-.347-.174-2.055-1.014-2.374-1.13-.318-.116-.55-.174-.78.174-.232.347-.898 1.13-1.1 1.362-.203.23-.405.26-.752.087-.347-.174-1.465-.54-2.79-1.72-1.03-.92-1.726-2.056-1.929-2.403-.202-.347-.022-.534.153-.707.157-.155.347-.405.52-.608.174-.202.232-.347.347-.578.116-.232.058-.434-.029-.608-.087-.174-.78-1.882-1.07-2.578-.282-.677-.568-.585-.78-.595l-.665-.012c-.232 0-.608.087-.927.434-.318.347-1.215 1.188-1.215 2.897s1.244 3.36 1.417 3.592c.174.232 2.447 3.734 5.93 5.236.828.358 1.474.572 1.978.732.83.264 1.588.227 2.185.138.667-.1 2.055-.84 2.344-1.651.29-.81.29-1.505.203-1.651-.086-.145-.318-.232-.665-.405z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="white"
+            style="position:relative;z-index:1;">
+            <path
+                d="M16 2C8.268 2 2 8.268 2 16c0 2.52.676 4.88 1.856 6.915L2 30l7.294-1.82A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.54 11.54 0 0 1-5.88-1.602l-.42-.25-4.33 1.08 1.1-4.22-.274-.434A11.56 11.56 0 0 1 4.4 16C4.4 9.593 9.593 4.4 16 4.4S27.6 9.593 27.6 16 22.407 27.6 16 27.6zm6.338-8.67c-.347-.174-2.055-1.014-2.374-1.13-.318-.116-.55-.174-.78.174-.232.347-.898 1.13-1.1 1.362-.203.23-.405.26-.752.087-.347-.174-1.465-.54-2.79-1.72-1.03-.92-1.726-2.056-1.929-2.403-.202-.347-.022-.534.153-.707.157-.155.347-.405.52-.608.174-.202.232-.347.347-.578.116-.232.058-.434-.029-.608-.087-.174-.78-1.882-1.07-2.578-.282-.677-.568-.585-.78-.595l-.665-.012c-.232 0-.608.087-.927.434-.318.347-1.215 1.188-1.215 2.897s1.244 3.36 1.417 3.592c.174.232 2.447 3.734 5.93 5.236.828.358 1.474.572 1.978.732.83.264 1.588.227 2.185.138.667-.1 2.055-.84 2.344-1.651.29-.81.29-1.505.203-1.651-.086-.145-.318-.232-.665-.405z" />
         </svg>
     </a>
 
     <style>
         @keyframes waFloat {
-            0%   { transform: scale(1); opacity: 0.7; }
-            70%  { transform: scale(1.6); opacity: 0; }
-            100% { transform: scale(1.6); opacity: 0; }
+            0% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+
+            70% {
+                transform: scale(1.6);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1.6);
+                opacity: 0;
+            }
         }
     </style>
 
