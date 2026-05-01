@@ -30,6 +30,21 @@
 
         gtag('config', 'AW-18121109648');
     </script>
+    <!-- Event snippet for Contact conversion page -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18121109648/6caACMSqyKUcEJDh6MBD',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
     <style>
         * {
             margin: 0;
@@ -1661,6 +1676,16 @@
             }
         }
 
+        // Google Ads conversion for contact links
+        document.querySelectorAll('a[href^="tel:"], a[href^="https://wa.me/"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (typeof gtag_report_conversion !== 'function' || typeof gtag !== 'function') return;
+
+                e.preventDefault();
+                gtag_report_conversion(link.href);
+            });
+        });
+
         // Form submission
         const form = document.getElementById('contactForm');
         form.addEventListener('submit', (e) => {
@@ -1678,7 +1703,11 @@
             }
 
             const whatsappUrl = `https://wa.me/77472040401?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
+            if (typeof gtag_report_conversion === 'function' && typeof gtag === 'function') {
+                gtag_report_conversion(whatsappUrl);
+            } else {
+                window.location = whatsappUrl;
+            }
 
             showToast('Перенаправляем в WhatsApp...', 'Сейчас откроется чат с мастером');
             form.reset();
