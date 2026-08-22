@@ -346,7 +346,7 @@
 
         .gallery-item:hover {
             transform: scale(1.02);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
         .gallery-item:hover img {
@@ -418,7 +418,7 @@
             border-radius: 1.5rem;
             cursor: ew-resize;
             user-select: none;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .ba-image {
@@ -448,7 +448,7 @@
             background: white;
             z-index: 2;
             transform: translateX(-50%);
-            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         }
 
         .ba-slider::after {
@@ -467,14 +467,14 @@
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%230ea5e9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m18 8 4 4-4 4M6 8l-4 4 4 4'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
             background-position: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
 
         .ba-label {
             position: absolute;
             bottom: 1.5rem;
             padding: 0.5rem 1rem;
-            background: rgba(0,0,0,0.6);
+            background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(8px);
             color: white;
             font-size: 0.75rem;
@@ -486,8 +486,13 @@
             pointer-events: none;
         }
 
-        .ba-label-before { left: 1.5rem; }
-        .ba-label-after { right: 1.5rem; }
+        .ba-label-before {
+            left: 1.5rem;
+        }
+
+        .ba-label-after {
+            right: 1.5rem;
+        }
 
         @media (max-width: 640px) {
             #phoneFloat {
@@ -496,16 +501,19 @@
                 right: 14px !important;
                 bottom: 76px !important;
             }
+
             #phoneFloat svg {
                 width: 22px !important;
                 height: 22px !important;
             }
+
             #whatsappFloat {
                 width: 50px !important;
                 height: 50px !important;
                 right: 14px !important;
                 bottom: 14px !important;
             }
+
             #whatsappFloat svg {
                 width: 26px !important;
                 height: 26px !important;
@@ -528,7 +536,8 @@
     </div>
 
     <!-- Navigation -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 h-20 z-50 transition-all duration-500 bg-white/80 border-b border-slate-200/80"
+    <nav id="navbar"
+        class="fixed top-0 left-0 right-0 h-20 z-50 transition-all duration-500 bg-white/80 border-b border-slate-200/80"
         style="backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);">
         <div class="max-w-7xl mx-auto h-full px-6 flex items-center justify-between">
             <a href="#hero" class="flex items-center gap-3 group">
@@ -592,17 +601,24 @@
     </div>
 
     <!-- Hero Section -->
-    <section id="hero" class="min-h-screen pt-24 sm:pt-28 lg:pt-20 relative overflow-hidden flex flex-col justify-center bg-gradient-to-b from-sky-50/40 via-white to-slate-50">
-        <div class="max-w-7xl mx-auto px-5 sm:px-6 grid lg:grid-cols-12 gap-8 lg:gap-12 items-center w-full py-8 lg:py-14">
+    <section id="hero"
+        class="min-h-screen pt-24 sm:pt-28 lg:pt-20 relative overflow-hidden flex flex-col justify-center bg-gradient-to-b from-sky-50/40 via-white to-slate-50">
+        <div
+            class="max-w-7xl mx-auto px-5 sm:px-6 grid lg:grid-cols-12 gap-8 lg:gap-12 items-center w-full py-8 lg:py-14">
             <div class="lg:col-span-5 flex flex-col justify-center">
                 <div class="animate-up animate-up-d1 flex flex-wrap items-center gap-2.5 sm:gap-3 mb-5 sm:mb-7">
-                    <div class="inline-flex items-center gap-2 bg-white border border-slate-200/80 rounded-full px-3.5 py-1.5 sm:px-4 sm:py-2 shadow-sm">
-                        <span class="w-2 h-2 rounded-full bg-emerald-500" style="animation: frostPulse 2s ease-in-out infinite;"></span>
-                        <span class="text-[11px] sm:text-xs font-medium tracking-wide text-slate-600">Работаем по всему Алматы</span>
+                    <div
+                        class="inline-flex items-center gap-2 bg-white border border-slate-200/80 rounded-full px-3.5 py-1.5 sm:px-4 sm:py-2 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500"
+                            style="animation: frostPulse 2s ease-in-out infinite;"></span>
+                        <span class="text-[11px] sm:text-xs font-medium tracking-wide text-slate-600">Работаем по всему
+                            Алматы</span>
                     </div>
-                    <div class="inline-flex items-center gap-2 bg-sky-50 border border-sky-200 rounded-full px-3.5 py-1.5 sm:px-4 sm:py-2 shadow-sm">
+                    <div
+                        class="inline-flex items-center gap-2 bg-sky-50 border border-sky-200 rounded-full px-3.5 py-1.5 sm:px-4 sm:py-2 shadow-sm">
                         <span class="iconify text-sky-500 text-xs" data-icon="mdi:fire"></span>
-                        <span class="text-[11px] sm:text-xs font-semibold tracking-wide text-sky-600">Акция: -20% до конца недели</span>
+                        <span class="text-[11px] sm:text-xs font-semibold tracking-wide text-sky-600">Акция: -20% до
+                            конца недели</span>
                     </div>
                 </div>
                 <h1
@@ -610,49 +626,63 @@
                     Ваша техника<br>
                     <span class="gradient-text">под защитой</span>
                 </h1>
-                <p class="animate-up animate-up-d3 text-sm sm:text-base lg:text-lg font-normal leading-relaxed text-slate-600 max-w-md mb-5 sm:mb-6">
-                    Кондиционеры, холодильники, стиральные машины и отопительные котлы. Профессиональный ремонт и обслуживание с гарантией в Алматы.
+                <p
+                    class="animate-up animate-up-d3 text-sm sm:text-base lg:text-lg font-normal leading-relaxed text-slate-600 max-w-md mb-5 sm:mb-6">
+                    Кондиционеры, холодильники, стиральные машины и отопительные котлы. Профессиональный ремонт и
+                    обслуживание с гарантией в Алматы.
                 </p>
 
                 <!-- Service category badges -->
                 <div class="animate-up animate-up-d3 flex flex-wrap gap-2 mb-5 sm:mb-6">
-                    <span class="inline-flex items-center gap-1.5 bg-sky-50 border border-sky-200 text-sky-700 font-medium rounded-full px-3 py-1 text-xs shadow-sm">
+                    <span
+                        class="inline-flex items-center gap-1.5 bg-sky-50 border border-sky-200 text-sky-700 font-medium rounded-full px-3 py-1 text-xs shadow-sm">
                         <span class="iconify text-xs text-sky-500" data-icon="mdi:snowflake"></span>Кондиционеры
                     </span>
-                    <span class="inline-flex items-center gap-1.5 bg-violet-50 border border-violet-200 text-violet-700 font-medium rounded-full px-3 py-1 text-xs shadow-sm">
-                        <span class="iconify text-xs text-violet-500" data-icon="mdi:fridge-outline"></span>Бытовая техника
+                    <span
+                        class="inline-flex items-center gap-1.5 bg-violet-50 border border-violet-200 text-violet-700 font-medium rounded-full px-3 py-1 text-xs shadow-sm">
+                        <span class="iconify text-xs text-violet-500" data-icon="mdi:fridge-outline"></span>Бытовая
+                        техника
                     </span>
-                    <span class="inline-flex items-center gap-1.5 bg-orange-50 border border-orange-200 text-orange-700 font-medium rounded-full px-3 py-1 text-xs shadow-sm">
+                    <span
+                        class="inline-flex items-center gap-1.5 bg-orange-50 border border-orange-200 text-orange-700 font-medium rounded-full px-3 py-1 text-xs shadow-sm">
                         <span class="iconify text-xs text-orange-500" data-icon="mdi:fire"></span>Котлы
                     </span>
                 </div>
 
                 <div class="animate-up animate-up-d3 flex items-center gap-2 mb-6 sm:mb-7">
                     <div class="flex -space-x-2">
-                        <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center overflow-hidden shadow-sm">
+                        <div
+                            class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center overflow-hidden shadow-sm">
                             <span class="iconify text-slate-600 text-xs sm:text-sm" data-icon="mdi:account"></span>
                         </div>
-                        <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-white bg-slate-300 flex items-center justify-center overflow-hidden shadow-sm">
+                        <div
+                            class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-white bg-slate-300 flex items-center justify-center overflow-hidden shadow-sm">
                             <span class="iconify text-slate-700 text-xs sm:text-sm" data-icon="mdi:account"></span>
                         </div>
-                        <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-white bg-sky-500 flex items-center justify-center shadow-sm">
+                        <div
+                            class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-white bg-sky-500 flex items-center justify-center shadow-sm">
                             <span class="text-[9px] sm:text-[10px] font-bold text-white">+2</span>
                         </div>
                     </div>
-                    <span class="text-[11px] sm:text-xs text-slate-600"><span class="text-emerald-600 font-semibold">● 2 мастера свободны</span>. Ближайший выезд через 45 мин</span>
+                    <span class="text-[11px] sm:text-xs text-slate-600"><span class="text-emerald-600 font-semibold">● 2
+                            мастера свободны</span>. Ближайший выезд через 45 мин</span>
                 </div>
 
                 <!-- Мобильное фото: видна вся техника целиком -->
-                <div class="lg:hidden animate-scale mb-6 rounded-2xl overflow-hidden border border-slate-200 bg-white relative shadow-xl aspect-[3/2]">
-                    <img src="images/hero_main.png" alt="Ремонт кондиционеров, холодильников, котлов и стиральных машин в Алматы"
+                <div
+                    class="lg:hidden animate-scale mb-6 rounded-2xl overflow-hidden border border-slate-200 bg-white relative shadow-xl aspect-[3/2]">
+                    <img src="images/hero_main.png"
+                        alt="Ремонт кондиционеров, холодильников, котлов и стиральных машин в Алматы"
                         class="w-full h-full object-cover object-center">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                     <div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-[11px]">
-                        <span class="text-white font-medium flex items-center gap-1 bg-black/60 backdrop-blur-md px-2 py-0.5 rounded-md border border-white/20">
+                        <span
+                            class="text-white font-medium flex items-center gap-1 bg-black/60 backdrop-blur-md px-2 py-0.5 rounded-md border border-white/20">
                             <span class="iconify text-sky-400" data-icon="mdi:check-decagram"></span>
                             Все виды техники
                         </span>
-                        <span class="text-amber-300 font-bold flex items-center gap-1 bg-black/60 backdrop-blur-md px-2 py-0.5 rounded-md border border-white/20">
+                        <span
+                            class="text-amber-300 font-bold flex items-center gap-1 bg-black/60 backdrop-blur-md px-2 py-0.5 rounded-md border border-white/20">
                             <span class="iconify" data-icon="mdi:star"></span> 4.9
                         </span>
                     </div>
@@ -677,23 +707,31 @@
                             <span class="iconify text-xl sm:text-2xl" data-icon="mdi:phone-in-talk"></span>
                         </div>
                         <span class="flex flex-col text-left">
-                            <span class="text-[10px] sm:text-xs font-semibold uppercase tracking-wide text-sky-600">Звоните сейчас</span>
-                            <span class="text-lg sm:text-2xl font-bold tracking-tight text-slate-900">+7 (747) 204-04-01</span>
+                            <span
+                                class="text-[10px] sm:text-xs font-semibold uppercase tracking-wide text-sky-600">Звоните
+                                сейчас</span>
+                            <span class="text-lg sm:text-2xl font-bold tracking-tight text-slate-900">+7 (747)
+                                204-04-01</span>
                         </span>
                     </a>
                 </div>
 
-                <div class="animate-up animate-up-d5 grid grid-cols-3 gap-3 sm:flex sm:gap-10 border-t border-slate-200 pt-5 sm:border-t-0 sm:pt-0">
+                <div
+                    class="animate-up animate-up-d5 grid grid-cols-3 gap-3 sm:flex sm:gap-10 border-t border-slate-200 pt-5 sm:border-t-0 sm:pt-0">
                     <div>
-                        <div class="text-2xl sm:text-3xl font-bold tracking-tight counter text-slate-900" data-target="2500">0</div>
+                        <div class="text-2xl sm:text-3xl font-bold tracking-tight counter text-slate-900"
+                            data-target="2500">0</div>
                         <div class="text-[11px] sm:text-xs text-slate-500 mt-0.5">Клиентов</div>
                     </div>
                     <div>
-                        <div class="text-2xl sm:text-3xl font-bold tracking-tight counter text-slate-900" data-target="8">0</div>
+                        <div class="text-2xl sm:text-3xl font-bold tracking-tight counter text-slate-900"
+                            data-target="8">0</div>
                         <div class="text-[11px] sm:text-xs text-slate-500 mt-0.5">Лет опыта</div>
                     </div>
                     <div>
-                        <div class="text-2xl sm:text-3xl font-bold tracking-tight whitespace-nowrap text-slate-900">1 <span class="gradient-text">сезон</span></div>
+                        <div class="text-2xl sm:text-3xl font-bold tracking-tight whitespace-nowrap text-slate-900">1
+                            <span class="gradient-text">сезон</span>
+                        </div>
                         <div class="text-[11px] sm:text-xs text-slate-500 mt-0.5">Гарантия</div>
                     </div>
                 </div>
@@ -707,18 +745,21 @@
                 <div class="relative rounded-3xl overflow-hidden border border-slate-200 bg-white aspect-[3/2] w-full"
                     style="box-shadow: 0 20px 50px -10px rgba(15, 23, 42, 0.12);">
                     <!-- Главное фото со всей техникой -->
-                    <img src="images/hero_main.png" alt="Ремонт кондиционеров, холодильников, котлов и стиральных машин в Алматы"
+                    <img src="images/hero_main.png"
+                        alt="Ремонт кондиционеров, холодильников, котлов и стиральных машин в Алматы"
                         class="w-full h-full object-cover object-center"
                         style="animation: slow-zoom 20s ease-in-out infinite;">
                     <div class="absolute inset-0"
                         style="background: linear-gradient(to top, rgba(15,23,42,0.65) 0%, transparent 40%, rgba(255,255,255,0.1) 100%);">
                     </div>
-                    
+
                     <!-- Компактная плашка внизу -->
                     <div class="absolute bottom-5 left-5 right-5">
-                        <div class="bg-white/90 backdrop-blur-xl rounded-2xl px-5 py-3.5 border border-slate-200 shadow-lg flex items-center justify-between">
+                        <div
+                            class="bg-white/90 backdrop-blur-xl rounded-2xl px-5 py-3.5 border border-slate-200 shadow-lg flex items-center justify-between">
                             <div class="flex items-center gap-3">
-                                <div class="w-9 h-9 rounded-xl bg-sky-500/15 flex items-center justify-center flex-shrink-0">
+                                <div
+                                    class="w-9 h-9 rounded-xl bg-sky-500/15 flex items-center justify-center flex-shrink-0">
                                     <span class="iconify text-sky-600 text-lg" data-icon="mdi:check-decagram"></span>
                                 </div>
                                 <div>
@@ -727,20 +768,24 @@
                                 </div>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span class="inline-flex items-center gap-1 bg-sky-50 border border-sky-200 text-sky-700 text-[10px] font-semibold px-2.5 py-1 rounded-lg">
+                                <span
+                                    class="inline-flex items-center gap-1 bg-sky-50 border border-sky-200 text-sky-700 text-[10px] font-semibold px-2.5 py-1 rounded-lg">
                                     <span class="iconify text-sky-500" data-icon="mdi:snowflake"></span> Кондиционеры
                                 </span>
-                                <span class="inline-flex items-center gap-1 bg-violet-50 border border-violet-200 text-violet-700 text-[10px] font-semibold px-2.5 py-1 rounded-lg">
-                                    <span class="iconify text-violet-500" data-icon="mdi:fridge-outline"></span> Быт. техника
+                                <span
+                                    class="inline-flex items-center gap-1 bg-violet-50 border border-violet-200 text-violet-700 text-[10px] font-semibold px-2.5 py-1 rounded-lg">
+                                    <span class="iconify text-violet-500" data-icon="mdi:fridge-outline"></span> Быт.
+                                    техника
                                 </span>
-                                <span class="inline-flex items-center gap-1 bg-orange-50 border border-orange-200 text-orange-700 text-[10px] font-semibold px-2.5 py-1 rounded-lg">
+                                <span
+                                    class="inline-flex items-center gap-1 bg-orange-50 border border-orange-200 text-orange-700 text-[10px] font-semibold px-2.5 py-1 rounded-lg">
                                     <span class="iconify text-orange-500" data-icon="mdi:fire"></span> Котлы
                                 </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Рейтинг бейдж -->
                 <div class="absolute -top-3 -right-3 bg-white/95 backdrop-blur-xl rounded-xl px-3.5 py-2 border border-slate-200 shadow-md"
                     style="animation: float 6s ease-in-out infinite;">
@@ -813,15 +858,26 @@
                 <h2 class="text-3xl sm:text-5xl font-bold tracking-tight leading-tight text-slate-900 mb-4 sm:mb-6">
                     Полный спектр<br><span class="gradient-text">бытового сервиса</span>
                 </h2>
-                <p class="text-base sm:text-lg font-normal text-slate-600 max-w-2xl mx-auto">Кондиционеры, холодильники, стиральные машины и котлы — решаем любые задачи быстро и профессионально</p>
+                <p class="text-base sm:text-lg font-normal text-slate-600 max-w-2xl mx-auto">Кондиционеры, холодильники,
+                    стиральные машины и котлы — решаем любые задачи быстро и профессионально</p>
             </div>
 
             <!-- Category tabs -->
             <div class="flex flex-wrap justify-center gap-2.5 sm:gap-3 mb-12 reveal-section">
-                <button onclick="filterServices('all')" id="tab-all" class="service-tab active-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-sky-500 bg-sky-500 text-white shadow-md transition-all duration-300">Все услуги</button>
-                <button onclick="filterServices('ac')" id="tab-ac" class="service-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-700 hover:border-sky-300 hover:text-sky-600 shadow-sm transition-all duration-300"><span class="iconify inline text-xs mr-1 text-sky-500" data-icon="mdi:snowflake"></span>Кондиционеры</button>
-                <button onclick="filterServices('appliance')" id="tab-appliance" class="service-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-700 hover:border-violet-300 hover:text-violet-600 shadow-sm transition-all duration-300"><span class="iconify inline text-xs mr-1 text-violet-500" data-icon="mdi:fridge-outline"></span>Бытовая техника</button>
-                <button onclick="filterServices('boiler')" id="tab-boiler" class="service-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-700 hover:border-orange-300 hover:text-orange-600 shadow-sm transition-all duration-300"><span class="iconify inline text-xs mr-1 text-orange-500" data-icon="mdi:fire"></span>Котлы</button>
+                <button onclick="filterServices('all')" id="tab-all"
+                    class="service-tab active-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-sky-500 bg-sky-500 text-white shadow-md transition-all duration-300">Все
+                    услуги</button>
+                <button onclick="filterServices('ac')" id="tab-ac"
+                    class="service-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-700 hover:border-sky-300 hover:text-sky-600 shadow-sm transition-all duration-300"><span
+                        class="iconify inline text-xs mr-1 text-sky-500"
+                        data-icon="mdi:snowflake"></span>Кондиционеры</button>
+                <button onclick="filterServices('appliance')" id="tab-appliance"
+                    class="service-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-700 hover:border-violet-300 hover:text-violet-600 shadow-sm transition-all duration-300"><span
+                        class="iconify inline text-xs mr-1 text-violet-500"
+                        data-icon="mdi:fridge-outline"></span>Бытовая техника</button>
+                <button onclick="filterServices('boiler')" id="tab-boiler"
+                    class="service-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-700 hover:border-orange-300 hover:text-orange-600 shadow-sm transition-all duration-300"><span
+                        class="iconify inline text-xs mr-1 text-orange-500" data-icon="mdi:fire"></span>Котлы</button>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal-section" id="services-grid">
@@ -833,17 +889,20 @@
                             class="card-img w-full h-full object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
                         <div class="absolute top-4 left-4">
-                            <div class="w-10 h-10 rounded-xl bg-sky-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-sky-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
                                 <span class="iconify text-sky-600 text-xl" data-icon="mdi:air-filter"></span>
                             </div>
                         </div>
                         <div class="absolute top-4 right-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-sky-50 text-sky-700 px-2.5 py-1 rounded-full border border-sky-200 shadow-sm">Кондиционер</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-sky-50 text-sky-700 px-2.5 py-1 rounded-full border border-sky-200 shadow-sm">Кондиционер</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Чистка кондиционера</h3>
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Глубокая чистка внутреннего и наружного блока. Удаление пыли, грибка и бактерий из фильтров и радиатора.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Глубокая чистка внутреннего и
+                            наружного блока. Удаление пыли, грибка и бактерий из фильтров и радиатора.</p>
                         <div class="card-line h-0.5 w-8 bg-slate-200 rounded-full transition-all duration-700"></div>
                     </div>
                 </div>
@@ -855,17 +914,20 @@
                             class="card-img w-full h-full object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
                         <div class="absolute top-4 left-4">
-                            <div class="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
                                 <span class="iconify text-orange-600 text-xl" data-icon="mdi:gas-cylinder"></span>
                             </div>
                         </div>
                         <div class="absolute top-4 right-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-sky-50 text-sky-700 px-2.5 py-1 rounded-full border border-sky-200 shadow-sm">Кондиционер</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-sky-50 text-sky-700 px-2.5 py-1 rounded-full border border-sky-200 shadow-sm">Кондиционер</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Заправка кондиционера</h3>
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Полная заправка фреоном R32, R410A, R22. Контроль давления и проверка на утечки.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Полная заправка фреоном R32,
+                            R410A, R22. Контроль давления и проверка на утечки.</p>
                         <div class="card-line h-0.5 w-8 bg-slate-200 rounded-full transition-all duration-700"></div>
                     </div>
                 </div>
@@ -877,17 +939,20 @@
                             class="card-img w-full h-full object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
                         <div class="absolute top-4 left-4">
-                            <div class="w-10 h-10 rounded-xl bg-red-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-red-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
                                 <span class="iconify text-red-600 text-xl" data-icon="mdi:wrench"></span>
                             </div>
                         </div>
                         <div class="absolute top-4 right-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-sky-50 text-sky-700 px-2.5 py-1 rounded-full border border-sky-200 shadow-sm">Кондиционер</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-sky-50 text-sky-700 px-2.5 py-1 rounded-full border border-sky-200 shadow-sm">Кондиционер</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Ремонт кондиционера</h3>
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Диагностика и ремонт любой сложности. Замена компрессора, платы, датчиков, вентиляторов.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Диагностика и ремонт любой
+                            сложности. Замена компрессора, платы, датчиков, вентиляторов.</p>
                         <div class="card-line h-0.5 w-8 bg-slate-200 rounded-full transition-all duration-700"></div>
                     </div>
                 </div>
@@ -899,17 +964,21 @@
                             class="card-img w-full h-full object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
                         <div class="absolute top-4 left-4">
-                            <div class="w-10 h-10 rounded-xl bg-violet-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
-                                <span class="iconify text-violet-600 text-xl" data-icon="mdi:plus-circle-outline"></span>
+                            <div
+                                class="w-10 h-10 rounded-xl bg-violet-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
+                                <span class="iconify text-violet-600 text-xl"
+                                    data-icon="mdi:plus-circle-outline"></span>
                             </div>
                         </div>
                         <div class="absolute top-4 right-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-sky-50 text-sky-700 px-2.5 py-1 rounded-full border border-sky-200 shadow-sm">Кондиционер</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-sky-50 text-sky-700 px-2.5 py-1 rounded-full border border-sky-200 shadow-sm">Кондиционер</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Установка и монтаж</h3>
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Профессиональный монтаж сплит-систем и мультизональных систем. Трасса, дренаж, электрика.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Профессиональный монтаж
+                            сплит-систем и мультизональных систем. Трасса, дренаж, электрика.</p>
                         <div class="card-line h-0.5 w-8 bg-slate-200 rounded-full transition-all duration-700"></div>
                     </div>
                 </div>
@@ -921,17 +990,20 @@
                             class="card-img w-full h-full object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
                         <div class="absolute top-4 left-4">
-                            <div class="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
                                 <span class="iconify text-cyan-600 text-xl" data-icon="mdi:water-outline"></span>
                             </div>
                         </div>
                         <div class="absolute top-4 right-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-sky-50 text-sky-700 px-2.5 py-1 rounded-full border border-sky-200 shadow-sm">Кондиционер</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-sky-50 text-sky-700 px-2.5 py-1 rounded-full border border-sky-200 shadow-sm">Кондиционер</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Мойка наружного блока</h3>
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Промывка наружного блока аппаратным методом. Удаляем грязь, пыль и пух с радиатора.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Промывка наружного блока
+                            аппаратным методом. Удаляем грязь, пыль и пух с радиатора.</p>
                         <div class="card-line h-0.5 w-8 bg-slate-200 rounded-full transition-all duration-700"></div>
                     </div>
                 </div>
@@ -943,17 +1015,21 @@
                             class="card-img w-full h-full object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
                         <div class="absolute top-4 left-4">
-                            <div class="w-10 h-10 rounded-xl bg-emerald-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
-                                <span class="iconify text-emerald-600 text-xl" data-icon="mdi:clipboard-check-outline"></span>
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
+                                <span class="iconify text-emerald-600 text-xl"
+                                    data-icon="mdi:clipboard-check-outline"></span>
                             </div>
                         </div>
                         <div class="absolute top-4 right-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-sky-50 text-sky-700 px-2.5 py-1 rounded-full border border-sky-200 shadow-sm">Кондиционер</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-sky-50 text-sky-700 px-2.5 py-1 rounded-full border border-sky-200 shadow-sm">Кондиционер</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Обслуживание</h3>
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Регулярное ТО кондиционеров. Продлеваем срок службы и предотвращаем поломки.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Регулярное ТО кондиционеров.
+                            Продлеваем срок службы и предотвращаем поломки.</p>
                         <div class="card-line h-0.5 w-8 bg-slate-200 rounded-full transition-all duration-700"></div>
                     </div>
                 </div>
@@ -966,17 +1042,21 @@
                             class="card-img w-full h-full object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
                         <div class="absolute top-4 left-4">
-                            <div class="w-10 h-10 rounded-xl bg-violet-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-violet-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
                                 <span class="iconify text-violet-600 text-xl" data-icon="mdi:fridge-outline"></span>
                             </div>
                         </div>
                         <div class="absolute top-4 right-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-violet-50 text-violet-700 px-2.5 py-1 rounded-full border border-violet-200 shadow-sm">Быт. техника</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-violet-50 text-violet-700 px-2.5 py-1 rounded-full border border-violet-200 shadow-sm">Быт.
+                                техника</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Ремонт холодильника</h3>
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Диагностика и ремонт любых холодильников. Замена компрессора, терморегулятора, ТЭНа. Устранение утечек фреона.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Диагностика и ремонт любых
+                            холодильников. Замена компрессора, терморегулятора, ТЭНа. Устранение утечек фреона.</p>
                         <div class="card-line h-0.5 w-8 bg-slate-200 rounded-full transition-all duration-700"></div>
                     </div>
                 </div>
@@ -988,17 +1068,21 @@
                             class="card-img w-full h-full object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
                         <div class="absolute top-4 left-4">
-                            <div class="w-10 h-10 rounded-xl bg-violet-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-violet-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
                                 <span class="iconify text-violet-600 text-xl" data-icon="mdi:washing-machine"></span>
                             </div>
                         </div>
                         <div class="absolute top-4 right-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-violet-50 text-violet-700 px-2.5 py-1 rounded-full border border-violet-200 shadow-sm">Быт. техника</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-violet-50 text-violet-700 px-2.5 py-1 rounded-full border border-violet-200 shadow-sm">Быт.
+                                техника</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Ремонт стиральной машины</h3>
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Замена ТЭНа, подшипников, ремня, помпы и электронных модулей. Устраняем течи и вибрацию.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Замена ТЭНа, подшипников,
+                            ремня, помпы и электронных модулей. Устраняем течи и вибрацию.</p>
                         <div class="card-line h-0.5 w-8 bg-slate-200 rounded-full transition-all duration-700"></div>
                     </div>
                 </div>
@@ -1006,21 +1090,26 @@
                 <!-- Card 9: Чистка бытовой техники -->
                 <div class="service-card group rounded-2xl overflow-hidden" data-category="appliance">
                     <div class="relative h-56 overflow-hidden bg-slate-100">
-                        <img src="images/appliance_service.png" alt="Профессиональная чистка и обслуживание бытовой техники"
+                        <img src="images/appliance_service.png"
+                            alt="Профессиональная чистка и обслуживание бытовой техники"
                             class="card-img w-full h-full object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
                         <div class="absolute top-4 left-4">
-                            <div class="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
                                 <span class="iconify text-cyan-600 text-xl" data-icon="mdi:spray-bottle"></span>
                             </div>
                         </div>
                         <div class="absolute top-4 right-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-violet-50 text-violet-700 px-2.5 py-1 rounded-full border border-violet-200 shadow-sm">Быт. техника</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-violet-50 text-violet-700 px-2.5 py-1 rounded-full border border-violet-200 shadow-sm">Быт.
+                                техника</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Чистка и обслуживание</h3>
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Профессиональная чистка холодильников, стиральных машин от накипи и загрязнений. Чистка дренажа и конденсатора.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Профессиональная чистка
+                            холодильников, стиральных машин от накипи и загрязнений. Чистка дренажа и конденсатора.</p>
                         <div class="card-line h-0.5 w-8 bg-slate-200 rounded-full transition-all duration-700"></div>
                     </div>
                 </div>
@@ -1033,17 +1122,20 @@
                             class="card-img w-full h-full object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
                         <div class="absolute top-4 left-4">
-                            <div class="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
                                 <span class="iconify text-orange-600 text-xl" data-icon="mdi:water-boiler"></span>
                             </div>
                         </div>
                         <div class="absolute top-4 right-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full border border-orange-200 shadow-sm">Котёл</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full border border-orange-200 shadow-sm">Котёл</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Ремонт котла</h3>
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Диагностика и ремонт газовых и электрических котлов. Замена горелки, теплообменника, насоса, платы управления.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Диагностика и ремонт газовых
+                            и электрических котлов. Замена горелки, теплообменника, насоса, платы управления.</p>
                         <div class="card-line h-0.5 w-8 bg-slate-200 rounded-full transition-all duration-700"></div>
                     </div>
                 </div>
@@ -1051,21 +1143,26 @@
                 <!-- Card 11: Обслуживание котла -->
                 <div class="service-card group rounded-2xl overflow-hidden" data-category="boiler">
                     <div class="relative h-56 overflow-hidden bg-slate-100">
-                        <img src="images/boiler_maintenance.png" alt="Техническое обслуживание и чистка теплообменника котла"
+                        <img src="images/boiler_maintenance.png"
+                            alt="Техническое обслуживание и чистка теплообменника котла"
                             class="card-img w-full h-full object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
                         <div class="absolute top-4 left-4">
-                            <div class="w-10 h-10 rounded-xl bg-amber-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
-                                <span class="iconify text-amber-600 text-xl" data-icon="mdi:clipboard-check-outline"></span>
+                            <div
+                                class="w-10 h-10 rounded-xl bg-amber-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
+                                <span class="iconify text-amber-600 text-xl"
+                                    data-icon="mdi:clipboard-check-outline"></span>
                             </div>
                         </div>
                         <div class="absolute top-4 right-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full border border-orange-200 shadow-sm">Котёл</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full border border-orange-200 shadow-sm">Котёл</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Обслуживание котла</h3>
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Ежегодное ТО котла: чистка горелки, промывка теплообменника, проверка давления, настройка параметров.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Ежегодное ТО котла: чистка
+                            горелки, промывка теплообменника, проверка давления, настройка параметров.</p>
                         <div class="card-line h-0.5 w-8 bg-slate-200 rounded-full transition-all duration-700"></div>
                     </div>
                 </div>
@@ -1077,17 +1174,20 @@
                             class="card-img w-full h-full object-cover transition-all duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
                         <div class="absolute top-4 left-4">
-                            <div class="w-10 h-10 rounded-xl bg-red-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-red-500/15 flex items-center justify-center backdrop-blur-md shadow-sm">
                                 <span class="iconify text-red-600 text-xl" data-icon="mdi:tools"></span>
                             </div>
                         </div>
                         <div class="absolute top-4 right-4">
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full border border-orange-200 shadow-sm">Котёл</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full border border-orange-200 shadow-sm">Котёл</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Установка котла</h3>
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Монтаж и ввод в эксплуатацию газовых и электрических котлов. Обвязка, подключение, пусконаладка.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed mb-4">Монтаж и ввод в эксплуатацию
+                            газовых и электрических котлов. Обвязка, подключение, пусконаладка.</p>
                         <div class="card-line h-0.5 w-8 bg-slate-200 rounded-full transition-all duration-700"></div>
                     </div>
                 </div>
@@ -1105,30 +1205,35 @@
                         Почувствуйте<br><span class="gradient-text">разницу</span>
                     </h2>
                     <p class="text-base sm:text-lg font-normal text-slate-600 mb-8 leading-relaxed">
-                        Грязный кондиционер — это не только неприятный запах, но и рассадник бактерий, плесени и причина аллергии. 
+                        Грязный кондиционер — это не только неприятный запах, но и рассадник бактерий, плесени и причина
+                        аллергии.
                         Профессиональная чистка удаляет 99.9% загрязнений.
                     </p>
                     <ul class="space-y-4 mb-10">
                         <li class="flex items-center gap-3 text-slate-700 font-medium">
-                            <div class="w-7 h-7 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-7 h-7 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
                                 <span class="iconify text-emerald-600 text-base" data-icon="mdi:check"></span>
                             </div>
                             Чистый воздух без бактерий и запахов
                         </li>
                         <li class="flex items-center gap-3 text-slate-700 font-medium">
-                            <div class="w-7 h-7 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-7 h-7 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
                                 <span class="iconify text-emerald-600 text-base" data-icon="mdi:check"></span>
                             </div>
                             Расход энергии ниже на 30%
                         </li>
                         <li class="flex items-center gap-3 text-slate-700 font-medium">
-                            <div class="w-7 h-7 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-7 h-7 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
                                 <span class="iconify text-emerald-600 text-base" data-icon="mdi:check"></span>
                             </div>
                             Срок службы техники дольше в 2 раза
                         </li>
                     </ul>
-                    <a href="#contact" class="btn-primary inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white text-sm font-semibold px-8 py-4 rounded-full">
+                    <a href="#contact"
+                        class="btn-primary inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white text-sm font-semibold px-8 py-4 rounded-full">
                         Заказать чистку
                         <span class="iconify" data-icon="mdi:arrow-right"></span>
                     </a>
@@ -1140,7 +1245,7 @@
                         <img src="images/cleaning.png" alt="Грязный кондиционер" class="ba-image ba-before">
                         <!-- After Image (Clean) -->
                         <img src="images/hero.png" alt="Чистый кондиционер" class="ba-image ba-after">
-                        
+
                         <div class="ba-slider"></div>
                         <div class="ba-label ba-label-before">До</div>
                         <div class="ba-label ba-label-after">После</div>
@@ -1159,21 +1264,31 @@
                 <h2 class="text-3xl sm:text-5xl font-bold tracking-tight leading-tight text-slate-900 mb-4 sm:mb-6">
                     Честные <span class="gradient-text">цены</span>
                 </h2>
-                <p class="text-base sm:text-lg font-normal text-slate-600 max-w-2xl mx-auto">Выберите нужную услугу или закажите комплексное обслуживание со скидкой</p>
+                <p class="text-base sm:text-lg font-normal text-slate-600 max-w-2xl mx-auto">Выберите нужную услугу или
+                    закажите комплексное обслуживание со скидкой</p>
             </div>
 
             <!-- Price tabs -->
             <div class="flex flex-wrap justify-center gap-2.5 sm:gap-3 mb-10 reveal-section">
-                <button onclick="filterPrices('ac')" id="price-tab-ac" class="price-tab active-price-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-sky-500 bg-sky-50 text-sky-700 shadow-sm transition-all duration-300"><span class="iconify inline text-xs mr-1 text-sky-500" data-icon="mdi:snowflake"></span>Кондиционеры</button>
-                <button onclick="filterPrices('appliance')" id="price-tab-appliance" class="price-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-700 hover:border-violet-300 hover:text-violet-600 shadow-sm transition-all duration-300"><span class="iconify inline text-xs mr-1 text-violet-500" data-icon="mdi:fridge-outline"></span>Бытовая техника</button>
-                <button onclick="filterPrices('boiler')" id="price-tab-boiler" class="price-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-700 hover:border-orange-300 hover:text-orange-600 shadow-sm transition-all duration-300"><span class="iconify inline text-xs mr-1 text-orange-500" data-icon="mdi:fire"></span>Котлы</button>
+                <button onclick="filterPrices('ac')" id="price-tab-ac"
+                    class="price-tab active-price-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-sky-500 bg-sky-50 text-sky-700 shadow-sm transition-all duration-300"><span
+                        class="iconify inline text-xs mr-1 text-sky-500"
+                        data-icon="mdi:snowflake"></span>Кондиционеры</button>
+                <button onclick="filterPrices('appliance')" id="price-tab-appliance"
+                    class="price-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-700 hover:border-violet-300 hover:text-violet-600 shadow-sm transition-all duration-300"><span
+                        class="iconify inline text-xs mr-1 text-violet-500"
+                        data-icon="mdi:fridge-outline"></span>Бытовая техника</button>
+                <button onclick="filterPrices('boiler')" id="price-tab-boiler"
+                    class="price-tab px-5 py-2.5 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-700 hover:border-orange-300 hover:text-orange-600 shadow-sm transition-all duration-300"><span
+                        class="iconify inline text-xs mr-1 text-orange-500" data-icon="mdi:fire"></span>Котлы</button>
             </div>
 
             <!-- AC Prices -->
             <div id="prices-ac" class="grid md:grid-cols-3 gap-6 reveal-section">
                 <div class="price-card rounded-2xl p-8 flex flex-col">
                     <div class="mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center mb-4 text-sky-600">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center mb-4 text-sky-600">
                             <span class="iconify text-2xl" data-icon="mdi:spray-bottle"></span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">Чистка</h3>
@@ -1186,19 +1301,30 @@
                         </div>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1">
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Чистка фильтров и радиатора</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Антибактериальная обработка</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Проверка дренажа</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Мойка наружного блока</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Чистка фильтров и радиатора</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Антибактериальная обработка</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Проверка дренажа</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Мойка наружного блока</li>
                     </ul>
-                    <a href="#contact" class="w-full text-center bg-slate-100 border border-slate-200 text-slate-800 text-sm font-semibold py-3.5 rounded-full hover:bg-slate-200 transition-all duration-300">Заказать</a>
+                    <a href="#contact"
+                        class="w-full text-center bg-slate-100 border border-slate-200 text-slate-800 text-sm font-semibold py-3.5 rounded-full hover:bg-slate-200 transition-all duration-300">Заказать</a>
                 </div>
                 <div class="price-card featured rounded-2xl p-8 flex flex-col relative">
                     <div class="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                        <span class="bg-sky-500 text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">Популярное</span>
+                        <span
+                            class="bg-sky-500 text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">Популярное</span>
                     </div>
                     <div class="mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center justify-center mb-4 text-sky-600">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center justify-center mb-4 text-sky-600">
                             <span class="iconify text-2xl" data-icon="mdi:tune-vertical"></span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">Чистка + Заправка</h3>
@@ -1212,17 +1338,30 @@
                         <div class="text-xs text-slate-400 mt-1 line-through">от 25 000 ₸</div>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1">
-                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Всё из тарифа «Чистка»</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Полная заправка фреоном</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Проверка на утечки</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Тестовый запуск и замер температур</li>
-                        <li class="flex items-center gap-3 text-sm text-sky-600 font-bold"><span class="iconify text-sky-500 text-base flex-shrink-0" data-icon="mdi:gift"></span>Скидка 5 000 ₸</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Всё из тарифа «Чистка»</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Полная заправка фреоном</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Проверка на утечки</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Тестовый запуск и замер температур</li>
+                        <li class="flex items-center gap-3 text-sm text-sky-600 font-bold"><span
+                                class="iconify text-sky-500 text-base flex-shrink-0" data-icon="mdi:gift"></span>Скидка
+                            5 000 ₸</li>
                     </ul>
-                    <a href="#contact" class="btn-primary w-full text-center bg-sky-500 hover:bg-sky-600 text-white text-sm font-semibold py-3.5 rounded-full shadow-md">Заказать со скидкой</a>
+                    <a href="#contact"
+                        class="btn-primary w-full text-center bg-sky-500 hover:bg-sky-600 text-white text-sm font-semibold py-3.5 rounded-full shadow-md">Заказать
+                        со скидкой</a>
                 </div>
                 <div class="price-card rounded-2xl p-8 flex flex-col">
                     <div class="mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center mb-4 text-orange-600">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center mb-4 text-orange-600">
                             <span class="iconify text-2xl" data-icon="mdi:hammer-wrench"></span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">Установка</h3>
@@ -1235,13 +1374,25 @@
                         </div>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1">
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Монтаж внутреннего блока</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Монтаж наружного блока</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Трасса до 3 метров (включена)</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Дренаж и электрика</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Вакуумизация и запуск</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Монтаж внутреннего блока</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Монтаж наружного блока</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Трасса до 3 метров (включена)</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Дренаж и электрика</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Вакуумизация и запуск</li>
                     </ul>
-                    <a href="#contact" class="btn-warm w-full text-center bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold py-3.5 rounded-full shadow-md">Рассчитать стоимость</a>
+                    <a href="#contact"
+                        class="btn-warm w-full text-center bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold py-3.5 rounded-full shadow-md">Рассчитать
+                        стоимость</a>
                 </div>
             </div>
 
@@ -1249,7 +1400,8 @@
             <div id="prices-appliance" class="grid md:grid-cols-3 gap-6 reveal-section hidden">
                 <div class="price-card rounded-2xl p-8 flex flex-col">
                     <div class="mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center mb-4 text-violet-600">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center mb-4 text-violet-600">
                             <span class="iconify text-2xl" data-icon="mdi:fridge-outline"></span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">Диагностика</h3>
@@ -1262,19 +1414,31 @@
                         </div>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1">
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Выезд и осмотр на дому</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Определение причины поломки</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Расчёт стоимости ремонта</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Вычитается из стоимости ремонта</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Выезд и осмотр на дому</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Определение причины поломки</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Расчёт стоимости ремонта</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Вычитается из стоимости ремонта</li>
                     </ul>
-                    <a href="#contact" class="w-full text-center bg-slate-100 border border-slate-200 text-slate-800 text-sm font-semibold py-3.5 rounded-full hover:bg-slate-200 transition-all duration-300">Заказать</a>
+                    <a href="#contact"
+                        class="w-full text-center bg-slate-100 border border-slate-200 text-slate-800 text-sm font-semibold py-3.5 rounded-full hover:bg-slate-200 transition-all duration-300">Заказать</a>
                 </div>
-                <div class="price-card featured rounded-2xl p-8 flex flex-col relative" style="border-color:#8b5cf6; background:linear-gradient(180deg,#faf5ff,#ffffff);">
+                <div class="price-card featured rounded-2xl p-8 flex flex-col relative"
+                    style="border-color:#8b5cf6; background:linear-gradient(180deg,#faf5ff,#ffffff);">
                     <div class="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                        <span class="bg-violet-600 text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">Популярное</span>
+                        <span
+                            class="bg-violet-600 text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">Популярное</span>
                     </div>
                     <div class="mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-violet-500/20 flex items-center justify-center mb-4 text-violet-600">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-violet-500/20 flex items-center justify-center mb-4 text-violet-600">
                             <span class="iconify text-2xl" data-icon="mdi:washing-machine"></span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">Ремонт</h3>
@@ -1287,16 +1451,27 @@
                         </div>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1">
-                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Диагностика в подарок</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Оригинальные запчасти</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Гарантия 6 месяцев</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Ремонт на дому в день вызова</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Диагностика в подарок</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Оригинальные запчасти</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Гарантия 6 месяцев</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Ремонт на дому в день вызова</li>
                     </ul>
-                    <a href="#contact" class="w-full text-center bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold py-3.5 rounded-full transition-all duration-300 shadow-md">Заказать ремонт</a>
+                    <a href="#contact"
+                        class="w-full text-center bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold py-3.5 rounded-full transition-all duration-300 shadow-md">Заказать
+                        ремонт</a>
                 </div>
                 <div class="price-card rounded-2xl p-8 flex flex-col">
                     <div class="mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center mb-4 text-cyan-600">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center mb-4 text-cyan-600">
                             <span class="iconify text-2xl" data-icon="mdi:spray-bottle"></span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">Чистка + ТО</h3>
@@ -1309,12 +1484,21 @@
                         </div>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1">
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Удаление накипи</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Чистка конденсатора/испарителя</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Проверка всех систем</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Заправка хладагентом (если нужно)</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Удаление накипи</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Чистка конденсатора/испарителя</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Проверка всех систем</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Заправка хладагентом (если нужно)</li>
                     </ul>
-                    <a href="#contact" class="w-full text-center bg-slate-100 border border-slate-200 text-slate-800 text-sm font-semibold py-3.5 rounded-full hover:bg-slate-200 transition-all duration-300">Заказать</a>
+                    <a href="#contact"
+                        class="w-full text-center bg-slate-100 border border-slate-200 text-slate-800 text-sm font-semibold py-3.5 rounded-full hover:bg-slate-200 transition-all duration-300">Заказать</a>
                 </div>
             </div>
 
@@ -1322,7 +1506,8 @@
             <div id="prices-boiler" class="grid md:grid-cols-3 gap-6 reveal-section hidden">
                 <div class="price-card rounded-2xl p-8 flex flex-col">
                     <div class="mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center mb-4 text-amber-600">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center mb-4 text-amber-600">
                             <span class="iconify text-2xl" data-icon="mdi:clipboard-search-outline"></span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">Диагностика</h3>
@@ -1335,19 +1520,31 @@
                         </div>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1">
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Выезд специалиста</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Проверка всех узлов</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Тест горелки и тяги</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Вычитается из ремонта</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Выезд специалиста</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Проверка всех узлов</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Тест горелки и тяги</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Вычитается из ремонта</li>
                     </ul>
-                    <a href="#contact" class="w-full text-center bg-slate-100 border border-slate-200 text-slate-800 text-sm font-semibold py-3.5 rounded-full hover:bg-slate-200 transition-all duration-300">Заказать</a>
+                    <a href="#contact"
+                        class="w-full text-center bg-slate-100 border border-slate-200 text-slate-800 text-sm font-semibold py-3.5 rounded-full hover:bg-slate-200 transition-all duration-300">Заказать</a>
                 </div>
-                <div class="price-card featured rounded-2xl p-8 flex flex-col relative" style="border-color:#f97316; background:linear-gradient(180deg,#fff7ed,#ffffff);">
+                <div class="price-card featured rounded-2xl p-8 flex flex-col relative"
+                    style="border-color:#f97316; background:linear-gradient(180deg,#fff7ed,#ffffff);">
                     <div class="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                        <span class="bg-orange-500 text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">Популярное</span>
+                        <span
+                            class="bg-orange-500 text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">Популярное</span>
                     </div>
                     <div class="mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-orange-500/20 flex items-center justify-center mb-4 text-orange-600">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-orange-500/20 flex items-center justify-center mb-4 text-orange-600">
                             <span class="iconify text-2xl" data-icon="mdi:water-boiler"></span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">Ремонт + ТО</h3>
@@ -1360,17 +1557,30 @@
                         </div>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1">
-                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Диагностика в подарок</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Чистка горелки и теплообменника</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Ремонт выявленных неисправностей</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Настройка и запуск</li>
-                        <li class="flex items-center gap-3 text-sm text-orange-600 font-bold"><span class="iconify text-orange-500 text-base flex-shrink-0" data-icon="mdi:shield-check"></span>Гарантия 6 месяцев</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Диагностика в подарок</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Чистка горелки и теплообменника</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Ремонт выявленных неисправностей</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700 font-medium"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Настройка и запуск</li>
+                        <li class="flex items-center gap-3 text-sm text-orange-600 font-bold"><span
+                                class="iconify text-orange-500 text-base flex-shrink-0"
+                                data-icon="mdi:shield-check"></span>Гарантия 6 месяцев</li>
                     </ul>
-                    <a href="#contact" class="btn-warm w-full text-center bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold py-3.5 rounded-full shadow-md">Заказать обслуживание</a>
+                    <a href="#contact"
+                        class="btn-warm w-full text-center bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold py-3.5 rounded-full shadow-md">Заказать
+                        обслуживание</a>
                 </div>
                 <div class="price-card rounded-2xl p-8 flex flex-col">
                     <div class="mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center mb-4 text-red-600">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center mb-4 text-red-600">
                             <span class="iconify text-2xl" data-icon="mdi:tools"></span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-1">Установка котла</h3>
@@ -1383,16 +1593,27 @@
                         </div>
                     </div>
                     <ul class="space-y-3 mb-8 flex-1">
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Монтаж котла на стену</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Подключение водопровода</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Подключение газа / электрики</li>
-                        <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-emerald-500 text-base flex-shrink-0" data-icon="mdi:check-circle"></span>Пусконаладка и настройка</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Монтаж котла на стену</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Подключение водопровода</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Подключение газа / электрики</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><span
+                                class="iconify text-emerald-500 text-base flex-shrink-0"
+                                data-icon="mdi:check-circle"></span>Пусконаладка и настройка</li>
                     </ul>
-                    <a href="#contact" class="btn-warm w-full text-center bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold py-3.5 rounded-full shadow-md">Рассчитать стоимость</a>
+                    <a href="#contact"
+                        class="btn-warm w-full text-center bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold py-3.5 rounded-full shadow-md">Рассчитать
+                        стоимость</a>
                 </div>
             </div>
 
-            <p class="text-center text-xs text-slate-400 mt-8 reveal-section">* Финальная стоимость зависит от модели, сложности доступа и объёма работ</p>
+            <p class="text-center text-xs text-slate-400 mt-8 reveal-section">* Финальная стоимость зависит от модели,
+                сложности доступа и объёма работ</p>
         </div>
     </section>
 
@@ -1404,8 +1625,7 @@
                     <div class="rounded-3xl overflow-hidden aspect-[4/3] border border-slate-200 shadow-xl">
                         <!-- Реальное фото: техник работает с кондиционером -->
                         <img src="images/advantages.png" alt="Мастер Frost Klima за работой"
-                            class="w-full h-full object-cover"
-                            style="animation: slow-zoom 20s ease-in-out infinite;">
+                            class="w-full h-full object-cover" style="animation: slow-zoom 20s ease-in-out infinite;">
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-3xl">
                         </div>
@@ -1413,7 +1633,8 @@
                     <div class="absolute -bottom-6 -right-6 bg-white/95 backdrop-blur-xl rounded-2xl p-6 border border-slate-200 shadow-xl hidden sm:block"
                         style="animation: float 6s ease-in-out infinite;">
                         <div class="flex items-center gap-4">
-                            <div class="w-14 h-14 rounded-xl bg-sky-500/15 flex items-center justify-center text-sky-600 shadow-sm">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-sky-500/15 flex items-center justify-center text-sky-600 shadow-sm">
                                 <span class="iconify text-3xl" data-icon="mdi:shield-check"></span>
                             </div>
                             <div>
@@ -1426,7 +1647,8 @@
 
                 <div class="reveal-section">
                     <span class="text-xs font-bold tracking-widest uppercase text-sky-600 mb-3 block">Почему мы</span>
-                    <h2 class="text-3xl sm:text-5xl font-bold tracking-tight leading-tight text-slate-900 mb-8 sm:mb-10">
+                    <h2
+                        class="text-3xl sm:text-5xl font-bold tracking-tight leading-tight text-slate-900 mb-8 sm:mb-10">
                         Надёжность в<br>каждой <span class="gradient-text">детали</span>
                     </h2>
                     <div class="space-y-6">
@@ -1437,7 +1659,8 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">Выезд за 1 час</h4>
-                                <p class="text-sm text-slate-600 font-normal">Быстро реагируем на заявки по всему Алматы. Работаем без выходных.</p>
+                                <p class="text-sm text-slate-600 font-normal">Быстро реагируем на заявки по всему
+                                    Алматы. Работаем без выходных.</p>
                             </div>
                         </div>
                         <div class="flex gap-4 group p-3 rounded-2xl hover:bg-white transition-colors duration-300">
@@ -1447,7 +1670,8 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">Прозрачные цены</h4>
-                                <p class="text-sm text-slate-600 font-normal">Фиксированная стоимость. Никаких скрытых доплат после начала работ.</p>
+                                <p class="text-sm text-slate-600 font-normal">Фиксированная стоимость. Никаких скрытых
+                                    доплат после начала работ.</p>
                             </div>
                         </div>
                         <div class="flex gap-4 group p-3 rounded-2xl hover:bg-white transition-colors duration-300">
@@ -1457,7 +1681,8 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">Лицензированные мастера</h4>
-                                <p class="text-sm text-slate-600 font-normal">Сертифицированные специалисты с опытом от 5 лет. Знаем все марки.</p>
+                                <p class="text-sm text-slate-600 font-normal">Сертифицированные специалисты с опытом от
+                                    5 лет. Знаем все марки.</p>
                             </div>
                         </div>
                         <div class="flex gap-4 group p-3 rounded-2xl hover:bg-white transition-colors duration-300">
@@ -1467,7 +1692,8 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">Оригинальные запчасти</h4>
-                                <p class="text-sm text-slate-600 font-normal">Используем только сертифицированные комплектующие с гарантией производителя.</p>
+                                <p class="text-sm text-slate-600 font-normal">Используем только сертифицированные
+                                    комплектующие с гарантией производителя.</p>
                             </div>
                         </div>
                     </div>
@@ -1484,41 +1710,50 @@
                 <h2 class="text-3xl sm:text-5xl font-bold tracking-tight leading-tight text-slate-900 mb-4 sm:mb-6">
                     Как мы <span class="gradient-text">работаем</span>
                 </h2>
-                <p class="text-base sm:text-lg font-normal text-slate-600 max-w-2xl mx-auto">Простой и понятный процесс от заявки до результата</p>
+                <p class="text-base sm:text-lg font-normal text-slate-600 max-w-2xl mx-auto">Простой и понятный процесс
+                    от заявки до результата</p>
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 reveal-section">
-                <div class="relative text-center group bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                <div
+                    class="relative text-center group bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
                     <div
                         class="w-16 h-16 rounded-2xl bg-sky-500/15 flex items-center justify-center mx-auto mb-6 group-hover:bg-sky-500/25 transition-colors shadow-sm">
                         <span class="text-2xl font-bold gradient-text">01</span>
                     </div>
                     <h4 class="font-bold text-slate-900 mb-2">Заявка</h4>
-                    <p class="text-sm text-slate-600 font-normal">Оставьте заявку на сайте или позвоните нам. Мы перезвоним за 5 минут.</p>
+                    <p class="text-sm text-slate-600 font-normal">Оставьте заявку на сайте или позвоните нам. Мы
+                        перезвоним за 5 минут.</p>
                 </div>
-                <div class="relative text-center group bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                <div
+                    class="relative text-center group bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
                     <div
                         class="w-16 h-16 rounded-2xl bg-sky-500/15 flex items-center justify-center mx-auto mb-6 group-hover:bg-sky-500/25 transition-colors shadow-sm">
                         <span class="text-2xl font-bold gradient-text">02</span>
                     </div>
                     <h4 class="font-bold text-slate-900 mb-2">Диагностика</h4>
-                    <p class="text-sm text-slate-600 font-normal">Мастер приезжает, проводит осмотр и называет точную стоимость.</p>
+                    <p class="text-sm text-slate-600 font-normal">Мастер приезжает, проводит осмотр и называет точную
+                        стоимость.</p>
                 </div>
-                <div class="relative text-center group bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                <div
+                    class="relative text-center group bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
                     <div
                         class="w-16 h-16 rounded-2xl bg-sky-500/15 flex items-center justify-center mx-auto mb-6 group-hover:bg-sky-500/25 transition-colors shadow-sm">
                         <span class="text-2xl font-bold gradient-text">03</span>
                     </div>
                     <h4 class="font-bold text-slate-900 mb-2">Выполнение</h4>
-                    <p class="text-sm text-slate-600 font-normal">Выполняем все работы с использованием профессионального оборудования.</p>
+                    <p class="text-sm text-slate-600 font-normal">Выполняем все работы с использованием
+                        профессионального оборудования.</p>
                 </div>
-                <div class="text-center group bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                <div
+                    class="text-center group bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
                     <div
                         class="w-16 h-16 rounded-2xl bg-emerald-500/15 flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-500/25 transition-colors shadow-sm">
                         <span class="iconify text-emerald-600 text-2xl" data-icon="mdi:check-bold"></span>
                     </div>
                     <h4 class="font-bold text-slate-900 mb-2">Гарантия</h4>
-                    <p class="text-sm text-slate-600 font-normal">Выдаём гарантию на все виды работ. Если что-то — исправим бесплатно.</p>
+                    <p class="text-sm text-slate-600 font-normal">Выдаём гарантию на все виды работ. Если что-то —
+                        исправим бесплатно.</p>
                 </div>
             </div>
         </div>
@@ -1534,7 +1769,8 @@
                 <h2 class="text-3xl sm:text-5xl font-bold tracking-tight leading-tight text-slate-900 mb-4 sm:mb-6">
                     Наши <span class="gradient-text">работы</span>
                 </h2>
-                <p class="text-base sm:text-lg font-normal text-slate-600 max-w-2xl mx-auto">Реальные фотографии с наших объектов в Алматы</p>
+                <p class="text-base sm:text-lg font-normal text-slate-600 max-w-2xl mx-auto">Реальные фотографии с наших
+                    объектов в Алматы</p>
             </div>
 
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 reveal-section">
@@ -1552,7 +1788,8 @@
                     </div>
                 </div>
                 <!-- Внутренний блок крупным планом -->
-                <div class="gallery-item relative rounded-2xl overflow-hidden cursor-pointer aspect-square border border-slate-200 shadow-md">
+                <div
+                    class="gallery-item relative rounded-2xl overflow-hidden cursor-pointer aspect-square border border-slate-200 shadow-md">
                     <img src="images/cleaning.png" alt="Внутренний блок кондиционера после чистки"
                         class="w-full h-full object-cover transition-all duration-700">
                     <div
@@ -1561,7 +1798,8 @@
                     </div>
                 </div>
                 <!-- Наружный блок на фасаде -->
-                <div class="gallery-item relative rounded-2xl overflow-hidden cursor-pointer aspect-square border border-slate-200 shadow-md">
+                <div
+                    class="gallery-item relative rounded-2xl overflow-hidden cursor-pointer aspect-square border border-slate-200 shadow-md">
                     <img src="images/washing.png" alt="Наружный блок на фасаде здания"
                         class="w-full h-full object-cover transition-all duration-700">
                     <div
@@ -1570,7 +1808,8 @@
                     </div>
                 </div>
                 <!-- Монтаж трассы -->
-                <div class="gallery-item relative rounded-2xl overflow-hidden cursor-pointer aspect-square border border-slate-200 shadow-md">
+                <div
+                    class="gallery-item relative rounded-2xl overflow-hidden cursor-pointer aspect-square border border-slate-200 shadow-md">
                     <img src="images/installation.png" alt="Монтаж фреоновой трассы"
                         class="w-full h-full object-cover transition-all duration-700">
                     <div
@@ -1579,7 +1818,8 @@
                     </div>
                 </div>
                 <!-- Ремонт: инструменты -->
-                <div class="gallery-item relative rounded-2xl overflow-hidden cursor-pointer aspect-square border border-slate-200 shadow-md">
+                <div
+                    class="gallery-item relative rounded-2xl overflow-hidden cursor-pointer aspect-square border border-slate-200 shadow-md">
                     <img src="images/tools.png" alt="Инструменты для ремонта кондиционера"
                         class="w-full h-full object-cover transition-all duration-700">
                     <div
@@ -1595,34 +1835,55 @@
     <section class="py-20 relative bg-white">
         <div class="max-w-7xl mx-auto px-6 mb-10">
             <div class="reveal-section text-center">
-                <span class="text-xs font-bold tracking-widest uppercase text-slate-400 mb-2 block">Работаем со всеми брендами техники</span>
+                <span class="text-xs font-bold tracking-widest uppercase text-slate-400 mb-2 block">Работаем со всеми
+                    брендами техники</span>
             </div>
         </div>
         <div class="marquee-mask overflow-hidden">
             <div class="flex marquee-track" style="width: max-content;">
                 <div class="flex items-center gap-16 px-8">
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Daikin</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Mitsubishi</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Samsung</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">LG</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Toshiba</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Gree</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Midea</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Haier</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Ballu</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Aux</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Daikin</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Mitsubishi</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Samsung</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">LG</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Toshiba</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Gree</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Midea</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Haier</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Ballu</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Aux</span>
                 </div>
                 <div class="flex items-center gap-16 px-8">
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Daikin</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Mitsubishi</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Samsung</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">LG</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Toshiba</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Gree</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Midea</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Haier</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Ballu</span>
-                    <span class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Aux</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Daikin</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Mitsubishi</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Samsung</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">LG</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Toshiba</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Gree</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Midea</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Haier</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Ballu</span>
+                    <span
+                        class="text-2xl font-semibold text-slate-400 hover:text-slate-700 transition-colors whitespace-nowrap tracking-wide">Aux</span>
                 </div>
             </div>
         </div>
@@ -1642,71 +1903,98 @@
                 <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white hover:border-sky-300 shadow-sm transition-all cursor-pointer"
                     onclick="toggleFaq(this)">
                     <div class="flex items-center justify-between p-6">
-                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Как часто нужно чистить кондиционер?</span>
+                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Как часто нужно чистить
+                            кондиционер?</span>
                         <span class="iconify faq-icon text-slate-400 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
                     </div>
                     <div class="faq-answer px-6">
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Рекомендуем чистить кондиционер минимум 2 раза в год — весной перед сезоном охлаждения и осенью перед сезоном отопления. При интенсивной эксплуатации или наличии домашних животных — каждые 2-3 месяца.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Рекомендуем чистить
+                            кондиционер минимум 2 раза в год — весной перед сезоном охлаждения и осенью перед сезоном
+                            отопления. При интенсивной эксплуатации или наличии домашних животных — каждые 2-3 месяца.
+                        </p>
                     </div>
                 </div>
                 <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white hover:border-sky-300 shadow-sm transition-all cursor-pointer"
                     onclick="toggleFaq(this)">
                     <div class="flex items-center justify-between p-6">
-                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Как понять, что нужна заправка кондиционера?</span>
+                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Как понять, что нужна заправка
+                            кондиционера?</span>
                         <span class="iconify faq-icon text-slate-400 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
                     </div>
                     <div class="faq-answer px-6">
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Основные признаки: кондиционер плохо охлаждает, на наружном блоке образуется иней, слышен шипящий звук, увеличилось потребление электроэнергии. Если заметили хоть один симптом — вызывайте мастера для диагностики.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Основные признаки:
+                            кондиционер плохо охлаждает, на наружном блоке образуется иней, слышен шипящий звук,
+                            увеличилось потребление электроэнергии. Если заметили хоть один симптом — вызывайте мастера
+                            для диагностики.</p>
                     </div>
                 </div>
                 <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white hover:border-sky-300 shadow-sm transition-all cursor-pointer"
                     onclick="toggleFaq(this)">
                     <div class="flex items-center justify-between p-6">
-                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Почему не морозит холодильник?</span>
+                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Почему не морозит
+                            холодильник?</span>
                         <span class="iconify faq-icon text-slate-400 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
                     </div>
                     <div class="faq-answer px-6">
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Причины могут быть разные: утечка фреона, неисправность компрессора или терморегулятора, засор капиллярной трубки, поломка вентилятора. Мастер проведёт диагностику прямо на дому и определит точную причину. В большинстве случаев ремонт занимает 1-2 часа.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Причины могут быть разные:
+                            утечка фреона, неисправность компрессора или терморегулятора, засор капиллярной трубки,
+                            поломка вентилятора. Мастер проведёт диагностику прямо на дому и определит точную причину. В
+                            большинстве случаев ремонт занимает 1-2 часа.</p>
                     </div>
                 </div>
                 <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white hover:border-sky-300 shadow-sm transition-all cursor-pointer"
                     onclick="toggleFaq(this)">
                     <div class="flex items-center justify-between p-6">
-                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Что делать, если стиральная машина не отжимает?</span>
+                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Что делать, если стиральная
+                            машина не отжимает?</span>
                         <span class="iconify faq-icon text-slate-400 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
                     </div>
                     <div class="faq-answer px-6">
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Чаще всего причина — износ щёток двигателя, неисправность платы управления, сломанный ремень привода или засорённый сливной насос. Мастер диагностирует проблему при выезде и, как правило, устраняет её в день обращения.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Чаще всего причина — износ
+                            щёток двигателя, неисправность платы управления, сломанный ремень привода или засорённый
+                            сливной насос. Мастер диагностирует проблему при выезде и, как правило, устраняет её в день
+                            обращения.</p>
                     </div>
                 </div>
                 <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white hover:border-sky-300 shadow-sm transition-all cursor-pointer"
                     onclick="toggleFaq(this)">
                     <div class="flex items-center justify-between p-6">
-                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Котёл не запускается — что делать?</span>
+                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Котёл не запускается — что
+                            делать?</span>
                         <span class="iconify faq-icon text-slate-400 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
                     </div>
                     <div class="faq-answer px-6">
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Не паникуйте. Проверьте давление в системе и подачу газа. Если всё в порядке — вызовите мастера. Частые причины: неисправный датчик давления, засорённая горелка, поломка платы управления или насоса. Мы выезжаем в течение 1-2 часов по всему Алматы.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Не паникуйте. Проверьте
+                            давление в системе и подачу газа. Если всё в порядке — вызовите мастера. Частые причины:
+                            неисправный датчик давления, засорённая горелка, поломка платы управления или насоса. Мы
+                            выезжаем в течение 1-2 часов по всему Алматы.</p>
                     </div>
                 </div>
                 <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white hover:border-sky-300 shadow-sm transition-all cursor-pointer"
                     onclick="toggleFaq(this)">
                     <div class="flex items-center justify-between p-6">
-                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Какие районы Алматы вы обслуживаете?</span>
+                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Какие районы Алматы вы
+                            обслуживаете?</span>
                         <span class="iconify faq-icon text-slate-400 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
                     </div>
                     <div class="faq-answer px-6">
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Работаем по всему городу: Алмалы, Бостандык, Ауэзовский, Медеуский, Наурызбайский, Алатауский, Жетысуский, Турксибский районы. Выезд в любой район — бесплатно при заказе от 8 000 ₸.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Работаем по всему городу:
+                            Алмалы, Бостандык, Ауэзовский, Медеуский, Наурызбайский, Алатауский, Жетысуский, Турксибский
+                            районы. Выезд в любой район — бесплатно при заказе от 8 000 ₸.</p>
                     </div>
                 </div>
                 <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white hover:border-sky-300 shadow-sm transition-all cursor-pointer"
                     onclick="toggleFaq(this)">
                     <div class="flex items-center justify-between p-6">
-                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Есть ли гарантия на работы?</span>
+                        <span class="text-sm sm:text-base font-bold text-slate-900 pr-4">Есть ли гарантия на
+                            работы?</span>
                         <span class="iconify faq-icon text-slate-400 text-xl flex-shrink-0" data-icon="mdi:plus"></span>
                     </div>
                     <div class="faq-answer px-6">
-                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Да. На ремонт кондиционеров — гарантия 1 сезон, на заправку — 1 сезон. На ремонт бытовой техники и котлов — 6 месяцев. Если в гарантийный период возникнет проблема по нашей вине — исправим бесплатно. На запчасти действует гарантия производителя.</p>
+                        <p class="text-sm text-slate-600 font-normal leading-relaxed pb-6">Да. На ремонт кондиционеров —
+                            гарантия 1 сезон, на заправку — 1 сезон. На ремонт бытовой техники и котлов — 6 месяцев.
+                            Если в гарантийный период возникнет проблема по нашей вине — исправим бесплатно. На запчасти
+                            действует гарантия производителя.</p>
                     </div>
                 </div>
             </div>
@@ -1718,36 +2006,43 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
                 <div class="reveal-section">
-                    <span
-                        class="text-xs font-bold tracking-widest uppercase text-sky-600 mb-3 block">Контакты</span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-sky-600 mb-3 block">Контакты</span>
                     <h2 class="text-3xl sm:text-5xl font-bold tracking-tight leading-tight text-slate-900 mb-4 sm:mb-6">
                         Оставьте <span class="gradient-text">заявку</span>
                     </h2>
-                    <p class="text-base sm:text-lg font-normal text-slate-600 mb-8 sm:mb-10 max-w-md">Перезвоним в течение 5 минут. Бесплатная консультация и расчёт стоимости.</p>
+                    <p class="text-base sm:text-lg font-normal text-slate-600 mb-8 sm:mb-10 max-w-md">Перезвоним в
+                        течение 5 минут. Бесплатная консультация и расчёт стоимости.</p>
 
                     <div class="space-y-5 mb-10">
-                        <a href="tel:+77472040401" class="flex items-center gap-4 group p-3 rounded-2xl hover:bg-slate-50 transition-colors">
+                        <a href="tel:+77472040401"
+                            class="flex items-center gap-4 group p-3 rounded-2xl hover:bg-slate-50 transition-colors">
                             <div
                                 class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center group-hover:bg-sky-500/20 text-sky-600 transition-colors shadow-sm">
                                 <span class="iconify text-xl" data-icon="mdi:phone"></span>
                             </div>
                             <div>
                                 <div class="text-xs text-slate-500">Телефон</div>
-                                <div class="font-bold text-slate-900 group-hover:text-sky-600 transition-colors text-base sm:text-lg">+7 (747) 204-04-01</div>
+                                <div
+                                    class="font-bold text-slate-900 group-hover:text-sky-600 transition-colors text-base sm:text-lg">
+                                    +7 (747) 204-04-01</div>
                             </div>
                         </a>
-                        <a href="https://wa.me/77472040401" target="_blank" class="flex items-center gap-4 group p-3 rounded-2xl hover:bg-slate-50 transition-colors">
+                        <a href="https://wa.me/77472040401" target="_blank"
+                            class="flex items-center gap-4 group p-3 rounded-2xl hover:bg-slate-50 transition-colors">
                             <div
                                 class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center group-hover:bg-emerald-500/20 text-emerald-600 transition-colors shadow-sm">
                                 <span class="iconify text-xl" data-icon="mdi:whatsapp"></span>
                             </div>
                             <div>
                                 <div class="text-xs text-slate-500">WhatsApp</div>
-                                <div class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors text-base sm:text-lg">+7 (747) 204-04-01</div>
+                                <div
+                                    class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors text-base sm:text-lg">
+                                    +7 (747) 204-04-01</div>
                             </div>
                         </a>
                         <div class="flex items-center gap-4 p-3">
-                            <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-600 shadow-sm">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-600 shadow-sm">
                                 <span class="iconify text-xl" data-icon="mdi:map-marker"></span>
                             </div>
                             <div>
@@ -1756,7 +2051,8 @@
                             </div>
                         </div>
                         <div class="flex items-center gap-4 p-3">
-                            <div class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center text-violet-600 shadow-sm">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center text-violet-600 shadow-sm">
                                 <span class="iconify text-xl" data-icon="mdi:clock-outline"></span>
                             </div>
                             <div>
@@ -1768,7 +2064,8 @@
                 </div>
 
                 <div class="reveal-section">
-                    <form id="contactForm" class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-4 sm:space-y-5 shadow-lg">
+                    <form id="contactForm"
+                        class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-4 sm:space-y-5 shadow-lg">
                         <div>
                             <label class="text-xs font-semibold text-slate-700 mb-1.5 block">Ваше имя</label>
                             <input type="text" placeholder="Как к вам обращаться?" required
@@ -1817,7 +2114,8 @@
                             <span class="iconify text-lg" data-icon="mdi:send"></span>
                             Отправить заявку
                         </button>
-                        <p class="text-[10px] text-slate-400 text-center">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+                        <p class="text-[10px] text-slate-400 text-center">Нажимая кнопку, вы соглашаетесь с обработкой
+                            персональных данных</p>
                     </form>
                 </div>
             </div>
@@ -1827,12 +2125,16 @@
     <!-- CTA Banner -->
     <section class="py-16 relative overflow-hidden bg-slate-50">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="reveal-section relative rounded-3xl overflow-hidden border border-sky-200 shadow-xl bg-gradient-to-r from-sky-100/80 via-blue-50 to-cyan-100/60">
+            <div
+                class="reveal-section relative rounded-3xl overflow-hidden border border-sky-200 shadow-xl bg-gradient-to-r from-sky-100/80 via-blue-50 to-cyan-100/60">
                 <div class="relative py-14 sm:py-16 px-6 sm:px-8 text-center">
                     <span class="iconify text-sky-500 text-5xl mb-5 inline-block" data-icon="mdi:snowflake"
                         style="animation: float 4s ease-in-out infinite;"></span>
-                    <h3 class="text-2xl sm:text-4xl font-bold tracking-tight text-slate-900 mb-3 sm:mb-4">Не ждите, пока сломается</h3>
-                    <p class="text-slate-600 font-normal mb-8 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">Регулярное обслуживание обходится в 5 раз дешевле ремонта. Закажите чистку или диагностику сегодня и продлите жизнь вашей технике.</p>
+                    <h3 class="text-2xl sm:text-4xl font-bold tracking-tight text-slate-900 mb-3 sm:mb-4">Не ждите, пока
+                        сломается</h3>
+                    <p class="text-slate-600 font-normal mb-8 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+                        Регулярное обслуживание обходится в 5 раз дешевле ремонта. Закажите чистку или диагностику
+                        сегодня и продлите жизнь вашей технике.</p>
                     <div class="flex flex-wrap justify-center gap-3 sm:gap-4">
                         <a href="#contact"
                             class="btn-primary inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white text-sm font-semibold px-8 py-4 rounded-full shadow-md">
@@ -1856,7 +2158,8 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div>
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-gradient-to-r from-sky-400 to-sky-600 shadow-sm">
+                        <div
+                            class="w-9 h-9 rounded-lg flex items-center justify-center bg-gradient-to-r from-sky-400 to-sky-600 shadow-sm">
                             <span class="iconify text-white text-lg" data-icon="mdi:snowflake"></span>
                         </div>
                         <div>
@@ -1864,16 +2167,23 @@
                             <span class="text-base font-light gradient-text">Klima</span>
                         </div>
                     </div>
-                    <p class="text-sm text-slate-400 font-normal leading-relaxed">Кондиционеры, холодильники, стиральные машины и котлы — профессиональный сервис в Алматы с 2016 года.</p>
+                    <p class="text-sm text-slate-400 font-normal leading-relaxed">Кондиционеры, холодильники, стиральные
+                        машины и котлы — профессиональный сервис в Алматы с 2016 года.</p>
                 </div>
                 <div>
                     <h4 class="text-xs font-bold tracking-widest uppercase text-slate-300 mb-4">Услуги</h4>
                     <ul class="space-y-3">
-                        <li><a href="#services" class="text-sm text-slate-400 hover:text-white transition-colors">Чистка / ремонт кондиционера</a></li>
-                        <li><a href="#services" class="text-sm text-slate-400 hover:text-white transition-colors">Ремонт холодильника</a></li>
-                        <li><a href="#services" class="text-sm text-slate-400 hover:text-white transition-colors">Ремонт стиральной машины</a></li>
-                        <li><a href="#services" class="text-sm text-slate-400 hover:text-white transition-colors">Ремонт и обслуживание котла</a></li>
-                        <li><a href="#services" class="text-sm text-slate-400 hover:text-white transition-colors">Установка / монтаж</a></li>
+                        <li><a href="#services" class="text-sm text-slate-400 hover:text-white transition-colors">Чистка
+                                / ремонт кондиционера</a></li>
+                        <li><a href="#services" class="text-sm text-slate-400 hover:text-white transition-colors">Ремонт
+                                холодильника</a></li>
+                        <li><a href="#services" class="text-sm text-slate-400 hover:text-white transition-colors">Ремонт
+                                стиральной машины</a></li>
+                        <li><a href="#services" class="text-sm text-slate-400 hover:text-white transition-colors">Ремонт
+                                и обслуживание котла</a></li>
+                        <li><a href="#services"
+                                class="text-sm text-slate-400 hover:text-white transition-colors">Установка / монтаж</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
@@ -2183,7 +2493,7 @@
         const baContainer = document.getElementById('baSlider');
         const baBefore = baContainer.querySelector('.ba-before');
         const baSlider = baContainer.querySelector('.ba-slider');
-        
+
         let isDragging = false;
 
         function moveSlider(x) {
@@ -2191,7 +2501,7 @@
             let position = ((x - rect.left) / rect.width) * 100;
             if (position < 0) position = 0;
             if (position > 100) position = 100;
-            
+
             baSlider.style.left = position + '%';
             baBefore.style.clipPath = `inset(0 ${100 - position}% 0 0)`;
         }
